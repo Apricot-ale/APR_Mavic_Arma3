@@ -1,135 +1,131 @@
-[h1]DJI Mavic 3 - Improved Version[/h1]
-This is an improved version of the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3112310403]Mavic 3[/url] and [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3112312230]Mavic 3 Drop[/url] mods created by [url=https://steamcommunity.com/profiles/76561198126061865]Sam[/url] and [url=https://steamcommunity.com/id/DarkBall1]DarkBall[/url].
-I've fixed several bugs and added new features, and I believe it's better than the original.
+# DJI Mavic 3 - Improved Version
 
-[h1]This mod is NOT Mavic 3 Simulator[/h1]
-Some functions have been purposely omitted and simplified.
+This is an improved version of the [Mavic 3](https://steamcommunity.com/sharedfiles/filedetails/?id=3112310403) and [Mavic 3 Drop](https://steamcommunity.com/sharedfiles/filedetails/?id=3112312230) mods originally created by [Sam](https://steamcommunity.com/profiles/76561198126061865) and [DarkBall](https://steamcommunity.com/id/DarkBall1).  
+I've fixed several bugs, added new features, and made it better than the original.
 
-[h1]Spec and Features:[/h1]
-[list]
-[*]Custom designed HUD for immersive experience.
-[*]Can be illuminated by auxiliary lights.
-[*]Highly visible collision light (also can be turned off)
-[*]Scouting with up to 1x~28x Zoom Camera
-[*]Thermal vision for heat source detection. (Mavic 3T version)
-[*]Max Operation Distance: Default - 6KM (You can change at CBA addonOption) 
-[*]Max Operation Height: 6000m
-[*]Max Flight Time: 30 Minutes.
-[*]Dropping grenades. Small bomber.
-[*]Max Carriable Grenades: 2 (depending on the weight)
-[*]Easy to carry - Fits in your Uniform, Vest or Backpack as an inventory item. Instead of a bulky backpack.
-[*]Supports ACE
-[/list]
+---
 
-[h1]Usage:[/h1]
-[list]
-[*]With "ItemMavic3" or "Item_Mavic3" in your inventory, Open the inventory menu and place the item on the ground to deploy the Mavic. The Mavic will automatically be the same as the player side.
-[*]The Mavic can be controlled from the UAV Terminal just like a normal drone.
-Tips: The UAV Terminal must be on the same side as the player and UAV.
-(Blufor=NATO, Opfor=CSAT, Independent=AAF, Civilian=Civilians)
-[*]Press Ctrl+RMB to toggle camera turret control mode, like as vanilla Utility Drone (AL-6).
-[*]You can charge your Mavic from action menu with using the item "Laser Battery".
-If you are using ACE3, you can charge Mavic from ACE interaction with ACE UAV Battery.
-[*]If you want to retrieve it, Land the Mavic and turn off engine. Then perform the action "Put Mavic in inventory" (You need free space in your inventory)
-[/list]
---- Grenade Drops
-[list]
-[*]You can attach a grenade to the Mavic by using the "Attach Grenade" action while the supported grenade is in your inventory.
-(Type of grenades are can be added at CBA addonOption)
-[*]The attached grenade can be dropped by pressing the "G" key while controlling the Mavic. (Key can be change)
-[*]If you no longer need to drop it, you can detach it by using the "Detach Grenade" action.
-[/list]
+## Important Note:  
+This mod is **NOT a Mavic 3 Simulator**. Some functions have been simplified or omitted.
 
-[h1] Changes and New features from Improved version: [/h1]
-[list]
-[*] [b]Better collision light with new config. [/b] Not too brightly!
-[*] [b]"Collision Light Off/On" action on Mavic. [/b]
-[*] [b]Improved sound[/b]
-[*] [b]Enhanced HUD and new crosshair[/b]
-[*] [b]Changeable HUD speed/distance/height units[/b]
-[*] [b]addonOption allows you to choose between ascent and descent speeds or heading in HUD.[/b]
-[*] [b]Selectable crosshairs in addonOption[/b]
-[*] [b]Partially working map[/b] (currently just shows current direction. Fixed to north, can be used as a simple compass)
-[*] [b][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3112312230]Mavic 3 Drop Mod[/url] is Integrated.[/b]
-[*] [b]Improved configurations:[/b] Flight model are fixed and tweaked. AI is now flying correctly. Rewritten grenade names and descriptions, Damages... Many tweaks.
-[*] [b]Battery persistence in inventory. [/b]
-[*] [b]Better inventory weight:[/b] Now set to 2.00 lb (0.91 kg).
-[*] [b]ACE Arsenal and Eden editor inventory compatibility.[/b]
-[*] [b]Many bug fixes: [/b] Fixes "can't leave UAV" bug, HUD error spams, Grenade missing when put in inventory, etc...
-[*] [b]Civilian version added. [/b] 
-[*] [b]Actual working "Bottom auxiliary light"[/b].
-[*] [b]New grenade drop key:[/b] Improved compatibility with key inputs. The new default key is [b]G[/b].
-[*] [b]Enable/Disable attaching grenade feature from addon option. [/b]
-[*] [b]Customizable grenade settings:[/b] You can now add grenades via the CBA Game Options menu. [i]Note:[/i] If you attach normal grenade, it's create the "GroundWeaponHolder" include grenade and attach the mavic.
-[*] [b]"Deadman switch" for Attached Grenades[/b]
-[*] [b]"Reset Camera Position" action. [/b]
-[*] [b]Vanilla UAV interface now available from addonOption.[/b]
-[/list]
+---
 
------
+## Specifications and Features:
+- **Custom designed HUD** for an immersive experience.
+- **Auxiliary lights** for illumination.
+- Highly visible **collision light** (can be turned off).
+- Scouting with **1x–28x zoom camera**.
+- **Thermal vision** for heat source detection (Mavic 3T version).
+- **Max Operation Distance**: Default - 6 km (configurable in CBA settings).  
+- **Max Operation Height**: 6000 m.  
+- **Max Flight Time**: 30 minutes.  
+- **Grenade dropping capability** for small bombing tasks.  
+- **Max carriable grenades**: 2 (depending on weight).  
+- Easily portable — fits in your **uniform, vest, or backpack** instead of requiring a bulky bag.  
+- **ACE compatibility** for enhanced gameplay.
 
-[b]Future Plans:[/b]  
-- More "Commands" (RTH mode and more)
-- Bug Hunting
-- Mute sounds on Mavic (Mavic 3 has no mic. so don't listening environment sounds)
+---
 
-[b]Known Issues:[/b]  
-I'll fix in feature............maybe.........maybe not?
-[list]
-[*]When "Timed Fuse (Normal) Grenade" attached to mavic, may interfere with interaction with the Mavic, this making it impossible to select actions such as Attach/Detach grenade and etc.
-(You can still can action while inside the drone and operating it)
-[*]Landing protection function was sometimes applied at the wrong timing. No damage to occur even when the drone crash hard to ground.
-(You can disable this function in addonOption)
-[*]Objects generated by bottom light feature cause AI to keep climbing.
-[*]When AI moves horizontally, it keeps increasing altitude a little. When it reaches the destination, it drops to the set altitude.
-[/list]
+## Usage:
+1. **Deploying the Mavic:**
+   - With `ItemMavic3` or `Item_Mavic3` in your inventory, open the inventory menu and place the item on the ground to deploy the drone. The Mavic will align with the player's faction.
+   - Control the Mavic through the **UAV Terminal** (ensure both the UAV and Terminal are on the same faction: Blufor=NATO, Opfor=CSAT, Independent=AAF, Civilian=Civilians).
 
-[h1]Notes:[/h1] 
-There are no changes to the 3D model.
-Improvements are focused on config and scripts. I'm not 3D model creator.
+2. **Camera Controls:**
+   - Press `Ctrl + RMB` to toggle the camera turret control mode, similar to the vanilla AL-6 Utility Drone.
 
-[b]This mod NOT compatible with other "Original Mavic 3" related/required mods/missions. [/b]
-This mod has breaking changes from original Mavic 3 mod.
+3. **Charging:**
+   - Use the item **Laser Battery** via the action menu to charge the Mavic.  
+   - For **ACE3 users**, recharge via the **ACE interaction menu** using an ACE UAV Battery.
 
-I want you for localization! Tell me if you are native!
-(Currently Support: EN/JP partially RU)
+4. **Retrieving the Mavic:**
+   - Land the Mavic, turn off the engine, and perform the "Put Mavic in inventory" action (requires free inventory space).
 
-Mod is signed for whitelisted server.
+### Grenade Drops:
+- **Attaching Grenades:**  
+  Use the "Attach Grenade" action when supported grenades are in your inventory.  
+  (Supported grenade types can be customized via the CBA settings).  
 
-[b]Recommendation:[/b]  
-I highly recommend the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3370954202]DJI Goggles 2 mod[/url] for immersive.
+- **Dropping Grenades:**  
+  Press the default **G** key to release the grenade (keybinding can be changed).
 
------
+- **Detaching Grenades:**  
+  Use the "Detach Grenade" action if the grenade is no longer needed.
 
-[b]License:[/b]
-[quote=Sam]We are removing all licensing restrictions from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3112310403]our mods[/url]. They are now fully open for editing and publishing. You are free to re-upload mods to the Workshop, edit, and modify them. If necessary, we can provide unencrypted models of various objects.[/quote]
-So, I'll publish this mod as [b]APL-SA[/b].
-[url=https://www.bohemia.net/community/licenses/arma-public-license-share-alike]Arma Public License Share Alike (APL-SA)[/url]
+---
 
-All names, models, etc, that appear in this MOD are fictitious.
-Any coincidences are random and no relation to those companies or products in real.
+## Changes and New Features:
+- Enhanced **collision light** with toggleable on/off actions.  
+- **Improved sound effects**.  
+- Redesigned **HUD** with a new crosshair.  
+- Configurable HUD units (speed, distance, height).  
+- Integrated **Mavic 3 Drop Mod**.  
+- Improved flight model and AI behavior.  
+- **Customizable grenade settings** in CBA options.  
+- Added **civilian version**.  
+- Working **bottom auxiliary light**.  
+- New **"Reset Camera Position"** action.  
+- **ACE Arsenal** and Eden Editor compatibility.  
+- Numerous **bug fixes**, including:  
+  - Fixed "can't leave UAV" issue.  
+  - Resolved HUD error spams and grenade inventory issues.  
+  - Improved grenade drop key compatibility (default key: **G**).  
 
+---
 
-[b]Authors:[/b]
-- Sam: Overall Mavic 3 modding, models, and more.
-- DarkBall: Overall Mavic 3 Scripts.
-- [EC] HAWK: animation configurations.
-- Wenza: for M67/V40 config in original. (maybe)
-- [url=https://steamcommunity.com/profiles/76561198376963860]BIG GUY[/url]: Create [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3312724922]Mavic 3 (edited) MOD[/url]. New sound and inspiration.
-- Apricot_ale: Total improves, Tweaks, New features.
+## Future Plans:
+- Add more commands (e.g., RTH mode).  
+- Fix additional bugs.  
+- Implement mute sounds for the Mavic.
 
------
+---
 
-Please use "proper and simple" English or your native language on comment/message to me.
-I'm not English native so I can't understand your crappy or complex English.
+## Known Issues:
+- Attaching "Timed Fuse (Normal) Grenade" may interfere with Mavic interactions.  
+- Landing protection occasionally activates at the wrong time, preventing crash damage (can be disabled in CBA settings).  
+- Objects generated by the bottom light can confuse AI, causing them to climb continuously.  
+- AI movement at high altitudes may gradually increase.
 
-When reporting a bug, please provide the following information accurately:
+---
 
-What mod used (RHS, LAMBS, etc.)
-What situation (Scenario, Multiplayer/Single)
-What you did
+## Notes:
+- No changes have been made to the **3D model**.  
+- Improvements focus on config and scripts.  
 
-Please include any additional information that may be useful.
+### Compatibility:
+This mod is **NOT compatible** with other "Original Mavic 3" related mods or missions due to breaking changes.  
 
+### Localization:
+Currently supported languages:  
+- English (EN), Japanese (JP), partially Russian (RU).  
+If you're a native speaker of another language, please help with translations!
 
-Thank you
+---
+
+## License:
+The original creators have removed all licensing restrictions, allowing for open editing and publishing.  
+This mod is distributed under the **[Arma Public License Share Alike (APL-SA)](https://www.bohemia.net/community/licenses/arma-public-license-share-alike)**.
+
+---
+
+## Authors:
+- **Sam:** Original Mavic 3 modding, models, and more.  
+- **DarkBall:** Original Mavic 3 scripts.  
+- **[EC] HAWK:** Animation configurations.  
+- **Wenza:** M67/V40 config in the original mod.  
+- **[BIG GUY](https://steamcommunity.com/profiles/76561198376963860):** New sounds and inspiration from the [Mavic 3 (edited) mod](https://steamcommunity.com/sharedfiles/filedetails/?id=3312724922).  
+- **Apricot_ale:** Improvements, tweaks, and new features.
+
+---
+
+## Bug Reports:
+Please provide the following details when reporting bugs:
+- What mods are being used (e.g., RHS, LAMBS).  
+- The situation (e.g., scenario, multiplayer/singleplayer).  
+- What actions were performed.  
+
+Include any other relevant information to help reproduce the issue.
+
+---
+
+Thank you for your support!
