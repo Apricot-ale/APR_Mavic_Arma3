@@ -2,12 +2,12 @@
 	while {true} do {
 		private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];
 		if (mavic_setting_enableConnectionDistance) then {
-			private _drones = allUnitsUAV select {typeOf _x isKindOf "Mavic_drone_base_F"};
-			private _dronesNear = _player nearEntities ["Mavic_drone_base_F", mavic_setting_maxConnectionDistance];
+			private _uavs = allUnitsUAV select {typeOf _x isKindOf "Mavic_drone_base_F"};
+			private _uavsNear = _player nearEntities ["Mavic_drone_base_F", mavic_setting_maxConnectionDistance];
 			
 			{
 				_player disableUAVConnectability [_x, true];
-			} forEach (_drones - _dronesNear);
+			} forEach (_uavs - _uavsNear);
 			{
 				private _signal = [_player, _x] call Mavic_fnc_getSignal;
 				if (_signal < 0.05) then {
@@ -18,7 +18,7 @@
 					_player enableUAVConnectability [_x, true];
 					_x enableUAVWaypoints true;
 				};
-			} forEach _dronesNear;
+			} forEach _uavsNear;
 		};
 
 		private _uav = getConnectedUAV _player;

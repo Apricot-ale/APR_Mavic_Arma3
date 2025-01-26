@@ -1,8 +1,8 @@
 //Allows a grenade to be attached to a drone but doesn't spawn one
-params ["_drone"];
+params ["_uav"];
 waitUntil {!isNull player && player == player};
 
-_dropId = _drone addAction [
+_dropId = _uav addAction [
 	["<t color='#FF0000'>", localize "STR_Mavic_UserAction_Drop_Attach", "</t>"] joinString "",
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
@@ -25,7 +25,7 @@ _dropId = _drone addAction [
 	5
 ];
 
-_detachId = _drone addAction [
+_detachId = _uav addAction [
 	["<t color='#00FF00'>", localize "STR_Mavic_UserAction_Drop_Detach", "</t>"] joinString "",
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
@@ -49,14 +49,14 @@ _detachId = _drone addAction [
 ];
 
 /*
-_drone addEventHandler ["Disassembled", {
+_uav addEventHandler ["Disassembled", {
 	params ["_entity", "_primaryBag", "_secondaryBag"];
 	player removeAction _dropId;
 	player removeAction _detachId;
 }];
 */
 
-_drone addEventHandler ["Killed", {
+_uav addEventHandler ["Killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 	//removeAllActions _unit;
 	_unit removeAction _dropId;
