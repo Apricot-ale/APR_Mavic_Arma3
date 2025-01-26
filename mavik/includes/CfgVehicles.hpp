@@ -233,7 +233,6 @@ class CfgVehicles
 		{
 			class Mavic_Events
 			{
-				killed = "{_x setDamage 1} forEach (crew (_this # 0));";
 				init = "params ['_entity']; if !(is3DEN) then { [_entity] spawn mavic_fnc_init; };";
 			};
 		};

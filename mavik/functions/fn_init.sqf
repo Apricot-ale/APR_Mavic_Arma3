@@ -9,4 +9,6 @@ _uav addEventHandler ["Killed", {
 	private _lightStatus = _unit getVariable ["mavic_var_lightStatus", [objNull, false]];
 	private _lightObj = _lightStatus #0;
 	if !(isNull _lightObj) then {deleteVehicle _lightObj;};
+	
+	{_x setDamage 1} forEach (crew _unit);
 }];
