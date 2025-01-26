@@ -140,7 +140,7 @@
 	"SLIDER",
 	["STR_mavic_setting_windCoef_displayName","STR_mavic_setting_windCoef_description"],
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Grenades"],
-	[0.1/4,0.2,0.1/0.9,2],
+	[0, 0.2, 0.1, 2],
 	1,
 	{ publicVariable "mavic_drop_setting_windCoef" },
 	true
