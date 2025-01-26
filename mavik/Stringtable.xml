@@ -164,7 +164,7 @@
             </Key>
             <Key ID="STR_Mavic_Key_dropKey_description">
                 <Original>Used to drop the attached grenades from Mavic.\nIt is also used to turn on the bottom auxiliary light.</Original>
-                <Japanese>Mavicに取り付けた手榴弾を投下するために使用。\底部補助ライトを点灯させるのにも使用します。</Japanese>
+                <Japanese>Mavicに取り付けた手榴弾を投下するために使用。\n底部補助ライトを点灯させるのにも使用します。</Japanese>
             </Key>
             <Key ID="STR_Mavic_HUD_Mode_Flight">
                 <Original>N Mode</Original>
