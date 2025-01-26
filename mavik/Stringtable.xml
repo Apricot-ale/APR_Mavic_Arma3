@@ -147,8 +147,8 @@
                 <Japanese>風力係数</Japanese>
             </Key>
             <Key ID="STR_mavic_setting_windCoef_description">
-                <Original>Defines how much wind affects a dropped grenade.</Original>
-                <Japanese>投下した手榴弾に対しての風の影響度合いを定義します。</Japanese>
+                <Original>Defines how much wind affects a dropped grenade.\nSpecifically, when the grenade is dropped, it is subjected to a lateral acceleration calculated as (wind x value ÷ grenade weight).</Original>
+                <Japanese>投下した手榴弾に対しての風の影響度合いを定義します。\n具体的には投下時の飛翔体に対して(風×値÷手榴弾重量)で計算された加速度が横から掛かります。</Japanese>
             </Key>
             <Key ID="STR_mavic_setting_allowedGrenades_displayName">
                 <Original>Allowed Grenades</Original>
