@@ -22,7 +22,7 @@ deleteVehicle _holder;
 _attachedGrenades deleteAt 0;
 _uav setVariable ["mavic_drop_var_grenadeList", _attachedGrenades, true];
 
-_windEffectMultiplier = (missionNamespace getVariable ["mavic_drop_setting_windCoef", 0.1]);
+_windEffectMultiplier = (missionNamespace getVariable ["mavic_drop_setting_windCoef", 0.11]);
 _grenadeMass = (getNumber(configFile >> "CfgAmmo" >> _grenadeAmmo >> "Mavic_weight") / 1000) max 0.200;
 private _wind = wind;
 _scaledWind = [
