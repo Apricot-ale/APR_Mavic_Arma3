@@ -104,13 +104,13 @@
 ] call CBA_fnc_addSetting;
 
 [
-	"mavic_setting_takeoffProtection",
+	"mavic_setting_landingProtection",
 	"CHECKBOX",
-	["STR_mavic_setting_takeoffProtection_displayName","STR_mavic_setting_takeoffProtection_description"],
+	["STR_mavic_setting_landingProtection_displayName","STR_mavic_setting_landingProtection_description"],
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Options"],
 	true,
 	1,
-	{ publicVariable "mavic_setting_takeoffProtection" },
+	{ publicVariable "mavic_setting_landingProtection" },
 	true
 ] call CBA_fnc_addSetting;
 

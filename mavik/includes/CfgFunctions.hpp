@@ -6,7 +6,7 @@ class CfgFunctions
 		class functions
 		{
 			class init {};
-			class takeoffProtection {};
+			class landingProtection {};
 			class createLight {};
 			class drawHud {};
 			class getSignal {};
