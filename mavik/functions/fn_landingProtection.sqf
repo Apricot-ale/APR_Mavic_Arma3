@@ -1,8 +1,9 @@
 params ["_uav"];
 
-private _lastUAVStatus = [true,false,true,false];
+private _lastUAVStatus = [];
 
 if (mavic_setting_landingProtection && (isDamageAllowed _uav)) then {
+	_uav allowDamage true;
 	while {mavic_setting_landingProtection} do {
 		private _isTouchingGround = isTouchingGround _uav;
 		private _isEngineOn = isEngineOn _uav;
