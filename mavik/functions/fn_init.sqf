@@ -1,7 +1,7 @@
 params ["_uav"];
 
 [_uav] call mavic_drop_fnc_makeGrenadeDrone;
-[_uav] call mavic_fnc_landingProtection;
+[_uav] call mavic_fnc_takeoffProtection;
 [_uav] call mavic_fnc_createLight;
 
 _uav addEventHandler ["Killed", {

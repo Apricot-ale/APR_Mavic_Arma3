@@ -2,8 +2,8 @@ params ["_uav"];
 
 private _lastUAVStatus = [false,false,false];
 
-if (mavic_setting_landingProtection && (isDamageAllowed _uav)) then {
-	while {mavic_setting_landingProtection} do {
+if (mavic_setting_takeoffProtection && (isDamageAllowed _uav)) then {
+	while {mavic_setting_takeoffProtection} do {
 		private _isTouchingGround = isTouchingGround _uav;
 		private _isEngineOn = isEngineOn _uav;
 		private _altitude = (getPosATL _uav) select 2;
@@ -19,5 +19,5 @@ if (mavic_setting_landingProtection && (isDamageAllowed _uav)) then {
 	_uav allowDamage true;
 };
 
-waitUntil {sleep 1; mavic_setting_landingProtection && (isDamageAllowed _uav)};
-[_uav] spawn mavic_fnc_landingProtection;
+waitUntil {sleep 1; mavic_setting_takeoffProtection && (isDamageAllowed _uav)};
+[_uav] spawn mavic_fnc_takeoffProtection;

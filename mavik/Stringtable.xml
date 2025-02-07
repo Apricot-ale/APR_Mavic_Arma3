@@ -130,13 +130,13 @@
                 <Original>If enabled, When you press the grenade drop key, will actually lights up the bottom auxiliary light.\n!!!Caution!!! Enabling this may affect(bug) the AI ​​autopilot doing increasing altitude continuously.</Original>
                 <Japanese>有効化すると、グレネード投下キーを押したとき、底部補助ライトを実際に点灯します。\n!!!注意!!! これを有効化するとAI操縦時に高度を上げ続けるなどの影響(バグ)が出る可能性があります。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_landingProtection_displayName">
-                <Original>Landing Protection</Original>
-                <Japanese>着陸時保護機能</Japanese>
+            <Key ID="STR_mavic_setting_takeoffProtection_displayName">
+                <Original>Takeoff Protection</Original>
+                <Japanese>離陸時保護機能</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_landingProtection_description">
-                <Original>If enabled, prevent accidental damage to the Mavic when landing.</Original>
-                <Japanese>有効化すると、Mavic着陸時の不測の損傷を防止します。</Japanese>
+            <Key ID="STR_mavic_setting_takeoffProtection_description">
+                <Original>If enabled, prevent accidental damage to the Mavic when takeoff.</Original>
+                <Japanese>有効化すると、Mavic離陸時の不測の損傷を防止します。</Japanese>
             </Key>
             <Key ID="STR_mavic_setting_dropAllowed_description">
                 <Original>Enable/Disable attaching grenade to Mavic and drop it.</Original>
