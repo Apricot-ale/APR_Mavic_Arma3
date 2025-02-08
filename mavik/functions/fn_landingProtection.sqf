@@ -3,17 +3,16 @@ params ["_uav"];
 private _lastUAVStatus = [];
 
 if (mavic_setting_landingProtection && (isDamageAllowed _uav)) then {
-	_uav allowDamage true;
 	while {mavic_setting_landingProtection} do {
-		private _isTouchingGround = isTouchingGround _uav;
 		private _isEngineOn = isEngineOn _uav;
-		private _altitude = (getPosATL _uav) select 2;
-		private _isFallingFast = abs(speed _uav) >= 5;
-		private _currentUAVStatus = [_isTouchingGround, _isEngineOn, _altitude > 3, _isFallingFast];
+		private _isTouchingGround = isTouchingGround _uav;
+		private _altitude = (getPosATL _uav select 2) <= 3;
+		private _isFallingFast = abs(speed _uav) <= 5;
+		private _currentUAVStatus = [_isEngineOn, _isTouchingGround, _altitude, _isFallingFast];
 
 		if (_currentUAVStatus isNotEqualTo _lastUAVStatus) then {
 			_lastUAVStatus = _currentUAVStatus;
-			_uav allowDamage !((_isTouchingGround && _isEngineOn && !_isFallingFast) || (_altitude <= 3 && !_isFallingFast));
+			_uav allowDamage !(_isEngineOn && (_isTouchingGround || (_altitude && _isFallingFast)));
 		};
 		sleep 0.1;
 	};
