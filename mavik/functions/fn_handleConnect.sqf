@@ -22,11 +22,12 @@
 		};
 
 		private _uav = getConnectedUAV _player;
+		private _ehId = nil;
 		if ((typeOf _uav isKindOf "Mavic_drone_base_F") && (typeOf cameraOn isKindOf "Mavic_drone_base_F") && cameraView == "GUNNER") then {
 			if !(mavic_setting_vanillaInterface) then {
 				if (mavic_setting_showInterface) then {
 					("mavic_rscLayer_interface" call BIS_fnc_rscLayer) cutRsc ["Mavic_Interface", "PLAIN"];
-					private _ehId = addMissionEventHandler ["Draw3D", { call Mavic_fnc_drawHud }];
+					_ehId = addMissionEventHandler ["Draw3D", { call Mavic_fnc_drawHud }];
 				};
 				missionNamespace setVariable ["mavic_var_prevHud", shownHUD];
 				showHUD [true, false];
