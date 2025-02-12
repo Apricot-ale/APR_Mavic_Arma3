@@ -492,7 +492,7 @@ class CfgVehicles
 			init = "''";
 		};
 		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
+		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_Blk_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_IND_Support_F.jpg";
 		scope = 2;
 		model = "\A3\weapons_F\AmmoBoxes\AmmoBox_F";
@@ -640,7 +640,7 @@ class CfgVehicles
 	class Mavic_Item_Box_3E_CSAT: Mavic_Item_Box
 	{
 		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
+		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_Blk_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_OPFOR_CO.paa"};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_East_Support_F.jpg";
 		displayName = "$STR_Mavic_Item_Box_3E_CSAT_displayName";
 		class TransportMagazines
@@ -703,7 +703,7 @@ class CfgVehicles
 	class Mavic_Item_Box_3E_AAF: Mavic_Item_Box
 	{
 		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
+		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_Blk_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_IND_Support_F.jpg";
 		displayName = "$STR_Mavic_Item_Box_3E_AAF_displayName";
 		class TransportMagazines
@@ -766,7 +766,7 @@ class CfgVehicles
 	class Mavic_Item_Box_3E_CIV: Mavic_Item_Box
 	{
 		hiddenSelections[] = {"Camo_Signs","Camo"};
-		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
+		hiddenSelectionsTextures[] = {"Mavik\AmmoBox_signs_DRONE_Blk_CA.paa","A3\Weapons_F\Ammoboxes\data\AmmoBox_HAF_CO.paa"};
 		editorPreview = "\A3\EditorPreviews_F\Data\CfgVehicles\Box_IND_Support_F.jpg";
 		displayName = "$STR_Mavic_Item_Box_3E_CIV_displayName";
 		class TransportMagazines
