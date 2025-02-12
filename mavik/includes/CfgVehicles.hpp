@@ -455,7 +455,7 @@ class CfgVehicles
 		vehicleClass = "Items";
 		class TransportMagazines
 		{
-			class Item_Mavic3
+			class _xx_Item_Mavic3
 			{
 				magazine = "Item_Mavic3";
 				count = 1;
@@ -471,7 +471,7 @@ class CfgVehicles
 		vehicleClass = "Items";
 		class TransportMagazines
 		{
-			class Item_Mavic3T
+			class _xx_Item_Mavic3T
 			{
 				magazine = "Item_Mavic3T";
 				count = 1;
