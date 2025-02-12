@@ -453,11 +453,11 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Mavic3_displayName";
 		author = "$STR_Mavic_Author";
 		vehicleClass = "Items";
-		class TransportMagazines
+		class TransportItems
 		{
-			class _xx_Item_Mavic3
+			class _xx_ItemMavic3
 			{
-				magazine = "Item_Mavic3";
+				name = "ItemMavic3";
 				count = 1;
 			};
 		};
@@ -469,11 +469,11 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Mavic3T_displayName";
 		author = "$STR_Mavic_Author";
 		vehicleClass = "Items";
-		class TransportMagazines
+		class TransportItems
 		{
-			class _xx_Item_Mavic3T
+			class _xx_ItemMavic3T
 			{
-				magazine = "Item_Mavic3T";
+				name = "ItemMavic3T";
 				count = 1;
 			};
 		};
@@ -501,27 +501,25 @@ class CfgVehicles
 		maximumLoad = 1000;
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 10;
-			};
-			class _xx_Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 10;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
 				count = 10;
 			};
 		};
-		class TransportWeapons
-		{
-		};
+		class TransportWeapons {};
 		class TransportItems
 		{
+			class _xx_ItemMavic3
+			{
+				name = "ItemMavic3";
+				count = 10;
+			};
+			class _xx_ItemMavic3T
+			{
+				name = "ItemMavic3T";
+				count = 10;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -584,11 +582,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3E_NATO_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -597,6 +590,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3
+			{
+				name = "ItemMavic3";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -614,11 +612,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3T_NATO_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -627,6 +620,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3T
+			{
+				name = "ItemMavic3T";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -647,11 +645,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3E_CSAT_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -660,6 +653,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3
+			{
+				name = "ItemMavic3";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -677,11 +675,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3T_CSAT_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -690,6 +683,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3T
+			{
+				name = "ItemMavic3T";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -710,11 +708,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3E_AAF_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -723,6 +716,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3
+			{
+				name = "ItemMavic3";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -740,11 +738,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3T_AAF_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -753,6 +746,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3T
+			{
+				name = "ItemMavic3T";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -773,11 +771,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3E_CIV_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -786,6 +779,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3
+			{
+				name = "ItemMavic3";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
@@ -803,11 +801,6 @@ class CfgVehicles
 		displayName = "$STR_Mavic_Item_Box_3T_CIV_displayName";
 		class TransportMagazines
 		{
-			class _xx_Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 2;
-			};
 			class _xx_Laserbatteries
 			{
 				magazine = "Laserbatteries";
@@ -816,6 +809,11 @@ class CfgVehicles
 		};
 		class TransportItems
 		{
+			class _xx_ItemMavic3T
+			{
+				name = "ItemMavic3T";
+				count = 2;
+			};
 			class _xx_ACE_UAVBattery
 			{
 				name = "ACE_UAVBattery";
