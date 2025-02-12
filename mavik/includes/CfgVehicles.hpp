@@ -478,26 +478,4 @@ class CfgVehicles
 			};
 		};
 	};
-	/*
-	class NATO_Box_Base;
-	class ACE_medicalSupplyCrate: NATO_Box_Base {
-		scope = 2;
-		scopeCurator = 2;
-		accuracy = 1000;
-		displayName = "$STR_Mavic_Item_Box_displayName";
-		author = "$STR_Mavic_Author";
-		class TransportMagazines {
-			class Item_Mavic3
-			{
-				magazine = "Item_Mavic3";
-				count = 5;
-			};
-			class Item_Mavic3T
-			{
-				magazine = "Item_Mavic3T";
-				count = 5;
-			};
-		};
-	};
-	*/
 };
