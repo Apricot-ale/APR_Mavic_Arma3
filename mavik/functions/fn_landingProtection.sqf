@@ -1,3 +1,18 @@
+/*
+ * fn_landingProtection.sqf
+ * Prevents damage caused by model-based issues during takeoff and landing.
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [this] call mavic_fnc_landingProtection;
+ *
+ * Public: No
+ */
 params ["_uav"];
 
 private _lastUAVStatus = [];

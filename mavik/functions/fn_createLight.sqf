@@ -1,3 +1,18 @@
+/*
+ * fn_createLight.sqf
+ * Create light object and attach to Mavic.
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ *
+ * Return Value:
+ * Object (Light Object)
+ *
+ * Example:
+ * [this] call mavic_fnc_createLight;
+ *
+ * Public: No
+ */
 params ["_uav"];
 
 if !(isServer) exitWith {};

@@ -1,10 +1,18 @@
-//
-// fn_checkUAVGrenadeDrop.sqf
-//
-// mavic_fnc_checkUAVGrenadeDrop
-//
-// check UAV is connected and that is mavic then call drop feature
-//
+/*
+ * fn_checkUAVGrenadeDrop.sqf
+ * Check the UAV is connected and it's a Mavic, then change the light state and invoke the drop function.
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player] call mavic_fnc_checkUAVGrenadeDrop;
+ *
+ * Public: Yes
+ */
 params ["_player"];
 
 private _uav = getConnectedUAV _player;

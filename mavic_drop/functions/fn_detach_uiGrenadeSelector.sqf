@@ -1,6 +1,20 @@
 #define GRID_W( num ) ( num * ( pixelGridNoUIScale * pixelW * 2 ))
 #define GRID_H( num ) ( num * ( pixelGridNoUIScale * pixelH * 2 ))
-
+/*
+ * fn_detach_uiGrenadeSelector.sqf
+ * Description
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [this] call mavic_drop_fnc_detach_uiGrenadeSelector;
+ *
+ * Public: No
+ */
 params ["_target"];
 
 private _iterationGreandes = _target getVariable ["mavic_drop_var_grenadeList", []];

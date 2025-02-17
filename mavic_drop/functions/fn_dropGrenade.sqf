@@ -1,10 +1,19 @@
-//
-// fn_dropGrenade.sqf
-//
-// mavic_drop_fnc_dropGrenade
-//
-// Spawns projectile(ammo) from magazine on drone and drop it.
-//
+/*
+ * fn_dropGrenade.sqf
+ * Generates and drops projectiles (ammunition) from the drone's attached magazines.
+ *
+ * Arguments:
+ * 0: _caller (Player or UAV if "isForced") <OBJECT>
+ * 1: isForced <BOOLEAN> (Optional, force _caller used as UAV)
+ *
+ * Return Value:
+ * Boolean (drop or not)
+ *
+ * Example:
+ * [this] call mavic_drop_fnc_dropGrenade;
+ *
+ * Public: No
+ */
 params [["_caller", player], ["_isForce", false]];
 private _uav = objNull;
 if (_isForce) then {_uav = _caller} else {_uav = getConnectedUAV _caller;};

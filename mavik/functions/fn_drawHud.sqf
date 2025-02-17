@@ -1,6 +1,20 @@
 #define GRID_W( num ) ( num * ( pixelGridNoUIScale * pixelW * 2 ))
 #define GRID_H( num ) ( num * ( pixelGridNoUIScale * pixelH * 2 ))
-
+/*
+ * fn_drawHud.sqf
+ * Drawing Mavic HUD.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call mavic_fnc_drawHud;
+ *
+ * Public: No
+ */
 private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];
 private _uav = cameraOn;
 

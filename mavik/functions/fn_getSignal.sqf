@@ -1,3 +1,19 @@
+/*
+ * fn_getSignal.sqf
+ * Check the distance and obstacles between the UAV and the player.
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ * 1: UAV <OBJECT>
+ *
+ * Return Value:
+ * Floor (Signal Strength)
+ *
+ * Example:
+ * [player, this] call mavic_fnc_getSignal;
+ *
+ * Public: No
+ */
 params ["_player", "_uav"];
 
 private _fnc_evaluateTerrainImpact = {  

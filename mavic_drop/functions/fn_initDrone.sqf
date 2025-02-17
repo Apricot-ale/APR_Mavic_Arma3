@@ -1,10 +1,19 @@
-//
-// fn_initDrone.sqf
-//
-// mavic_drop_fnc_initDrone
-//
-// Spawns a drone with a grenade attached
-//
+/*
+ * fn_initDrone.sqf
+ * Spawns a drone equipped with a grenade.
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ * 1: Magazine <STRINGS>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [this, "Mavic_M433"] call mavic_drop_fnc_initDrone;
+ *
+ * Public: No
+ */
 params ["_uav", "_grenade"];
 if (is3DEN) exitWith {};
 

@@ -1,3 +1,18 @@
+/*
+ * fn_onExit.sqf
+ * Terminate Hud-related drawing control of the Mavic.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call mavic_fnc_onExit;
+ *
+ * Public: No
+ */
 ("mavic_rscLayer_interface" call BIS_fnc_rscLayer) cutText ["", "PLAIN"];
 private _prevHUD = missionNamespace getVariable ["mavic_var_prevHud", shownHUD];
 showHUD _prevHUD;

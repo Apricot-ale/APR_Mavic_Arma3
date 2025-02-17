@@ -1,3 +1,19 @@
+/*
+ * fn_handleConnect.sqf
+ * Checks the connection status and zoom status of the UAV.
+ * and controls blur effects and communication loss due to distance.
+ *
+ * Arguments:
+ * None
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * call mavic_fnc_handleConnect;
+ *
+ * Public: No
+ */
 [] spawn {
 	while {true} do {
 		private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];

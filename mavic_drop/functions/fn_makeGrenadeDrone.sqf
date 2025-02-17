@@ -1,4 +1,18 @@
-//Allows a grenade to be attached to a drone but doesn't spawn one
+/*
+ * fn_makeGrenadeDrone.sqf
+ * Adds an action to attach a grenade to the drone.
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [this] call mavic_drop_fnc_makeGrenadeDrone;
+ *
+ * Public: No
+ */
 params ["_uav"];
 waitUntil {!isNull player && player == player};
 

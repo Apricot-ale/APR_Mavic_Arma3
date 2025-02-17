@@ -1,6 +1,21 @@
 #define GRID_W( num ) ( num * ( pixelGridNoUIScale * pixelW * 2 ))
 #define GRID_H( num ) ( num * ( pixelGridNoUIScale * pixelH * 2 ))
-
+/*
+ * fn_uiGrenadeSelector.sqf
+ * Description
+ *
+ * Arguments:
+ * 0: _actionInfo <ARRAY>
+ * ["_target", "_caller", "_actionId", "_arguments"]
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [["_target", "_caller", "_actionId", "_arguments"]] call mavic_drop_fnc_uiGrenadeSelector;
+ *
+ * Public: No
+ */
 params ["_actionInfo"];
 
 private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];

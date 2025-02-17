@@ -1,6 +1,19 @@
-params [
-	["_statement", "ONLOAD"]
-];
+/*
+ * fn_dynamicBlurToggle.sqf
+ * Control blur effect.
+ *
+ * Arguments:
+ * 0: State <STRINGS>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * ["ONLOAD"] call mavic_drop_fnc_dynamicBlurToggle;
+ *
+ * Public: No
+ */
+params [["_statement", "ONLOAD"]];
 
 switch ( toUpper _statement ) do {
 	case "ONLOAD": {

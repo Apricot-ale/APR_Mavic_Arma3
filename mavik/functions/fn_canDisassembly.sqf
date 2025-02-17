@@ -1,3 +1,18 @@
+/*
+ * fn_canDisassembly.sqf
+ * Check the UAV is recoverable.
+ *
+ * Arguments:
+ * 0: UAV <OBJECT>
+ *
+ * Return Value:
+ * Boolean (can or not)
+ *
+ * Example:
+ * [this] call mavic_fnc_canDisassembly;
+ *
+ * Public: No
+ */
 params ["_uav"];
 
 private _itemType = ["Item_Mavic3", "Item_Mavic3T"] select ((typeOf _uav) isKindOf "Mavic3T_drone_base_F");

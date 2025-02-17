@@ -1,3 +1,20 @@
+/*
+ * fn_createMavicOnItemCheck.sqf
+ * Create mavic on GroundWeaponHolder (Ground Inventory).
+ *
+ * Arguments:
+ * 0: Player <OBJECT>
+ * 1: GroundWeaponHolder <OBJECT>
+ * 2: UAV Item <STRING>
+ *
+ * Return Value:
+ * None
+ *
+ * Example:
+ * [player, Box_Dummy, "ItemMavic3T"] call mavic_fnc_createMavicOnItemCheck;
+ *
+ * Public: No
+ */
 params ["_unit", "_container", "_item"];
 
 if !(_item in ["ItemMavic3T", "ItemMavic3", "ItemMavic", "Item_Mavic3T", "Item_Mavic3", "Item_Mavic"]) exitWith {};
