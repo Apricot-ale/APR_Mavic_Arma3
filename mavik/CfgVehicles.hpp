@@ -350,12 +350,13 @@ class CfgVehicles
 	};
 	class Mavic3_drone_wreck_F: Mavic_drone_base_F
 	{
+		displayName = "$STR_Mavic_Vehicle_Mavic3W_displayName";
 		destrType = "DestructWreck";
 		class EventHandlers: EventHandlers
 		{
 			class Mavic_EventHandlers
 			{
-				init = "params ['_entity']; _entity setdamage 1;";
+				init = "";
 				killed = "";
 			};
 		};

@@ -7,6 +7,7 @@ class CfgFunctions
 		{
 			class init {};
 			class killed {};
+			class wreck {};
 			class landingProtection {};
 			class createLight {};
 			class drawHud {};

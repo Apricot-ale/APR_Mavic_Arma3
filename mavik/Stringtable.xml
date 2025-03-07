@@ -249,6 +249,10 @@
                 <Original>FPV Recon Drone with Thermal Vision&lt;br/&gt;Put on the ground to deploy it.</Original>
                 <Japanese>サーマルビジョン付き一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Vehicle_Mavic3W_displayName">
+                <Original>DJI Mavic 3 (Wreck)</Original>
+                <Japanese>DJI Mavic 3 (残骸)</Japanese>
+            </Key>
             <Key ID="STR_Mavic_UserAction_DisassembleUAV">
                 <Original>Put Mavic in inventory</Original>
                 <Japanese>Mavicをインベントリにしまう</Japanese>
