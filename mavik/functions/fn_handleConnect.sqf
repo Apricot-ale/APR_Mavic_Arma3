@@ -50,8 +50,8 @@
 			};
 			
 			waitUntil {
-				_uav = getConnectedUAV _player;
-				!(typeOf _uav isKindOf "Mavic_drone_base_F") || !(typeOf cameraOn isKindOf "Mavic_drone_base_F") || cameraView != "GUNNER" || !alive _uav
+				_CurrentUAV = getConnectedUAV _player;
+				(_CurrentUAV != _uav) || !(typeOf _CurrentUAV isKindOf "Mavic_drone_base_F") || !(typeOf cameraOn isKindOf "Mavic_drone_base_F") || cameraView != "GUNNER" || !alive _CurrentUAV
 			};
 			if !(isNil "_ehId") then {removeMissionEventHandler ["Draw3D", _ehId]};
 			call Mavic_fnc_onExit;
