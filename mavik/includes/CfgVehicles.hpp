@@ -11,7 +11,7 @@ class CfgVehicles
 	class Mavic_drone_base_F: UAV_06_base_F
 	{
 		author = "$STR_Mavic_Author";
-		scope = 0;
+		scope = 1;
 		displayName = "$STR_Mavic_Vehicle_Mavic3_displayName";
 		mapSize = 4;
 		uavCameraDriverPos = "pip_pilot_pos";
