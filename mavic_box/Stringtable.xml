@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project name="DJI_Mavic_Box">
+    <Package name="DJI_Mavic_Box">
+        <Container name="DJI_Mavic_Box_container">
+            <Key ID="STR_Mavic_Box_AIO_Mavic3A_Items_F_displayName">
+                <Original>Mavic 3 Drone Box [AIO]</Original>
+                <Japanese>Mavic 3 ドローン箱 [全部入り]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_NATO_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [NATO]</Original>
+                <Japanese>Mavic 3E ドローン箱 [NATO]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_NATO_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [NATO]</Original>
+                <Japanese>Mavic 3T ドローン箱 [NATO]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_CSAT_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [CSAT]</Original>
+                <Japanese>Mavic 3E ドローン箱 [CSAT]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_CSAT_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [CSAT]</Original>
+                <Japanese>Mavic 3T ドローン箱 [CSAT]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_AAF_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [AAF]</Original>
+                <Japanese>Mavic 3E ドローン箱 [AAF]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_AAF_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [AAF]</Original>
+                <Japanese>Mavic 3T ドローン箱 [AAF]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_EAF_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [LDF]</Original>
+                <Japanese>Mavic 3E ドローン箱 [LDF]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_EAF_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [LDF]</Original>
+                <Japanese>Mavic 3T ドローン箱 [LDF]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_RUS_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [Russia]</Original>
+                <Japanese>Mavic 3E ドローン箱 [Russia]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_RUS_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [Russia]</Original>
+                <Japanese>Mavic 3T ドローン箱 [Russia]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_GEN_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [Gendarmerie]</Original>
+                <Japanese>Mavic 3E ドローン箱 [Gendarmerie]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_GEN_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [Gendarmerie]</Original>
+                <Japanese>Mavic 3T ドローン箱 [Gendarmerie]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_CIV_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [Civilian]</Original>
+                <Japanese>Mavic 3E ドローン箱 [Civilian]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_CIV_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [Civilian]</Original>
+                <Japanese>Mavic 3T ドローン箱 [Civilian]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_IDAP_Mavic3E_Items_F_displayName">
+                <Original>Mavic 3E Drone Box [IDAP]</Original>
+                <Japanese>Mavic 3E ドローン箱 [IDAP]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_IDAP_Mavic3T_Items_F_displayName">
+                <Original>Mavic 3T Drone Box [IDAP]</Original>
+                <Japanese>Mavic 3T ドローン箱 [IDAP]</Japanese>
+            </Key>
+        </Container>
+    </Package>
+</Project>
