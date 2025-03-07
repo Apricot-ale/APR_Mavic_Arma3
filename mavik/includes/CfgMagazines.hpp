@@ -17,13 +17,13 @@ class CfgMagazines
 	};
 	class Item_Mavic3: Item_Mavic
 	{
-		scope = 2;
+		scope = 1;
 		descriptionShort = "$STR_Mavic_Item_Mavic3_description";
 		displayName = "$STR_Mavic_Item_Mavic3_Magazine_displayName";
 	};
 	class Item_Mavic3T: Item_Mavic
 	{
-		scope = 2;
+		scope = 1;
 		descriptionShort = "$STR_Mavic_Item_Mavic3T_description";
 		displayName = "$STR_Mavic_Item_Mavic3T_Magazine_displayName";
 	};
