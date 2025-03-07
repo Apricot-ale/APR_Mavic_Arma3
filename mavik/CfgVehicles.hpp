@@ -49,7 +49,7 @@ class CfgVehicles
 		class TransportItems {};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"mavik\textures\body_co.paa"};
-		destrType = "DestructWreck";
+		//destrType = "DestructWreck";
 		class MarkerLights
 		{
 			class NavGreen
@@ -231,9 +231,10 @@ class CfgVehicles
 		};
 		class EventHandlers: EventHandlers
 		{
-			class Mavic_Events
+			class Mavic_EventHandlers
 			{
-				init = "params ['_entity']; if !(is3DEN) then { [_entity] spawn mavic_fnc_init; };";
+				init = "if !(is3DEN) then { _this spawn mavic_fnc_init; };";
+				killed = "if !(is3DEN) then { _this spawn mavic_fnc_killed; };";
 			};
 		};
 		class UserActions
@@ -344,6 +345,18 @@ class CfgVehicles
 						componentType = "UAVFeedDisplayComponent";
 					};
 				};
+			};
+		};
+	};
+	class Mavic3_drone_wreck_F: Mavic_drone_base_F
+	{
+		destrType = "DestructWreck";
+		class EventHandlers: EventHandlers
+		{
+			class Mavic_EventHandlers
+			{
+				init = "params ['_entity']; _entity setdamage 1;";
+				killed = "";
 			};
 		};
 	};
