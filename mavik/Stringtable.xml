@@ -6,127 +6,127 @@
                 <Original>Mavic 3 MOD Team</Original>
                 <Japanese>Mavic 3 MOD チーム</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_MOD">
+            <Key ID="STR_Mavic_Setting_MOD">
                 <Original>Mavic Settings</Original>
                 <Japanese>Mavic 設定</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_Category_Interface">
+            <Key ID="STR_Mavic_Setting_Category_Interface">
                 <Original>Interface</Original>
                 <Japanese>インタフェース</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_Category_Options">
+            <Key ID="STR_Mavic_Setting_Category_Options">
                 <Original>Options</Original>
                 <Japanese>オプション</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_showInterface_displayName">
+            <Key ID="STR_Mavic_Setting_showInterface_displayName">
                 <Original>Show Interface</Original>
                 <Japanese>インタフェースを表示</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_showInterface_description">
+            <Key ID="STR_Mavic_Setting_showInterface_description">
                 <Original>Show/Hide Mavic HUD Interface.</Original>
                 <Japanese>MavicのHUDインタフェースを表示/非表示します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_vanillaInterface_displayName">
+            <Key ID="STR_Mavic_Setting_vanillaInterface_displayName">
                 <Original>Use Vanilla Interface</Original>
                 <Japanese>ゲーム標準のインタフェースを使用</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_vanillaInterface_description">
+            <Key ID="STR_Mavic_Setting_vanillaInterface_description">
                 <Original>Use vanilla UAV interface instead of the Mavic HUD.</Original>
                 <Japanese>Mavic用HUDの代わりにゲーム標準のUAVインタフェースを使用します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHeading_displayName">
+            <Key ID="STR_Mavic_Setting_hudHeading_displayName">
                 <Original>Show Heading</Original>
                 <Japanese>方位を表示</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHeading_description">
+            <Key ID="STR_Mavic_Setting_hudHeading_description">
                 <Original>Shown heading azimuth instead of the vertical speed on HUD.</Original>
                 <Japanese>垂直速度の代わりに現在の方位角をHUDに表示します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHSpeedUnit_displayName">
+            <Key ID="STR_Mavic_Setting_hudHSpeedUnit_displayName">
                 <Original>Vertical Speed​​ Units</Original>
                 <Japanese>垂直速度の単位</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHSpeedUnit_description">
+            <Key ID="STR_Mavic_Setting_hudHSpeedUnit_description">
                 <Original>Select the units of vertical speed, such as ascent or descent.</Original>
                 <Japanese>上昇や下降などの垂直速度の単位を選択します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudVSpeedUnit_displayName">
+            <Key ID="STR_Mavic_Setting_hudVSpeedUnit_displayName">
                 <Original>Movement Speed Units</Original>
                 <Japanese>移動速度の単位</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudVSpeedUnit_description">
+            <Key ID="STR_Mavic_Setting_hudVSpeedUnit_description">
                 <Original>Select the unit of speed for movement.</Original>
                 <Japanese>移動時の速度の単位を選択します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHeightUnit_displayName">
+            <Key ID="STR_Mavic_Setting_hudHeightUnit_displayName">
                 <Original>Height​​ Units</Original>
                 <Japanese>高度の単位</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudHeightUnit_description">
+            <Key ID="STR_Mavic_Setting_hudHeightUnit_description">
                 <Original>Select the altitude unit.</Original>
                 <Japanese>高度の単位を選択します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudDistanceUnit_displayName">
+            <Key ID="STR_Mavic_Setting_hudDistanceUnit_displayName">
                 <Original>Distance Units</Original>
                 <Japanese>距離の単位</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudDistanceUnit_description">
+            <Key ID="STR_Mavic_Setting_hudDistanceUnit_description">
                 <Original>Select the distance unit.</Original>
                 <Japanese>距離の単位を選択します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_displayName">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_displayName">
                 <Original>Crosshair</Original>
                 <Japanese>クロスヘア</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_description">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_description">
                 <Original>Change the crosshair that appears in the center of the Mavic HUD.</Original>
                 <Japanese>MavicのHUD中央部に表示されるクロスヘアを変更します。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_0">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_0">
                 <Original>None</Original>
                 <Japanese>非表示</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_1">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_1">
                 <Original>Cross (Realistic)</Original>
                 <Japanese>十字 (現実的)</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_2">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_2">
                 <Original>Diagonal (Edited)</Original>
                 <Japanese>斜め十字 (Edited)</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_hudCrosshair_3">
+            <Key ID="STR_Mavic_Setting_hudCrosshair_3">
                 <Original>Big (Original)</Original>
                 <Japanese>大きな十字 (オリジナル)</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_enableConnectionDistance_displayName">
+            <Key ID="STR_Mavic_Setting_enableConnectionDistance_displayName">
                 <Original>Enable Distance Limit</Original>
                 <Japanese>距離制限を有効化</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_enableConnectionDistance_description">
+            <Key ID="STR_Mavic_Setting_enableConnectionDistance_description">
                 <Original>When enabled, Mavic will become uncontrollable if the distance limit is exceeded.</Original>
                 <Japanese>有効化すると、制限距離を超えた際にMavicの操作が不能になります。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_maxConnectionDistance_displayName">
+            <Key ID="STR_Mavic_Setting_maxConnectionDistance_displayName">
                 <Original>Maximum Distance Limit</Original>
                 <Japanese>最大距離制限</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_maxConnectionDistance_description">
+            <Key ID="STR_Mavic_Setting_maxConnectionDistance_description">
                 <Original>Defines the distance at which you can control your Mavic.\nIf exceed limit, Mavic will become uncontrollable.\nThis distance may be reduced by factors such as buildings and terrain.</Original>
                 <Japanese>どのくらいの距離まで離れても操作できるかを定義します。\nこの制限距離を超えた際にMavicの操作が不能になります。\nこの距離は建物や地形などの影響を受けて短くなる可能性があります。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_lightAllowed_displayName">
+            <Key ID="STR_Mavic_Setting_lightAllowed_displayName">
                 <Original>Use bottom Light (Experimental)</Original>
                 <Japanese>底部ライトを使用する (試験的)</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_lightAllowed_description">
+            <Key ID="STR_Mavic_Setting_lightAllowed_description">
                 <Original>If enabled, When you press the grenade drop key, will actually lights up the bottom auxiliary light.\n!!!Caution!!! Enabling this may affect(bug) the AI ​​autopilot doing increasing altitude continuously.</Original>
                 <Japanese>有効化すると、グレネード投下キーを押したとき、底部補助ライトを実際に点灯します。\n!!!注意!!! これを有効化するとAI操縦時に高度を上げ続けるなどの影響(バグ)が出る可能性があります。</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_landingProtection_displayName">
+            <Key ID="STR_Mavic_Setting_landingProtection_displayName">
                 <Original>Takeoff Protection</Original>
                 <Japanese>離陸時保護機能</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_landingProtection_description">
+            <Key ID="STR_Mavic_Setting_landingProtection_description">
                 <Original>If enabled, prevent accidental damage to the Mavic when takeoff and landing.</Original>
                 <Japanese>有効化すると、Mavic離陸時及び着陸時の不測の損傷を防止します。</Japanese>
             </Key>
