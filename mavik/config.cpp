@@ -12,10 +12,10 @@ class CfgPatches
 	};
 };
 
-#include "includes\EventHandlers.hpp"
-#include "includes\CfgFunctions.hpp"
-#include "includes\CfgVehicles.hpp"
-#include "includes\CfgMagazines.hpp"
-#include "includes\CfgWeapons.hpp"
-#include "includes\CfgSounds.hpp"
-#include "includes\RscTitles.hpp"
+#include "EventHandlers.hpp"
+#include "CfgFunctions.hpp"
+#include "CfgVehicles.hpp"
+#include "CfgMagazines.hpp"
+#include "CfgWeapons.hpp"
+#include "CfgSounds.hpp"
+#include "RscTitles.hpp"
