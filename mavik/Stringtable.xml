@@ -18,10 +18,6 @@
                 <Original>Options</Original>
                 <Japanese>オプション</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_Category_Grenades">
-                <Original>Grenade Drop</Original>
-                <Japanese>グレネード投下</Japanese>
-            </Key>
             <Key ID="STR_mavic_setting_showInterface_displayName">
                 <Original>Show Interface</Original>
                 <Japanese>インタフェースを表示</Japanese>
@@ -102,10 +98,6 @@
                 <Original>Big (Original)</Original>
                 <Japanese>大きな十字 (オリジナル)</Japanese>
             </Key>
-            <Key ID="STR_mavic_setting_dropAllowed_displayName">
-                <Original>Enable Drop Grenade</Original>
-                <Japanese>グレネード投下を有効化</Japanese>
-            </Key>
             <Key ID="STR_mavic_setting_enableConnectionDistance_displayName">
                 <Original>Enable Distance Limit</Original>
                 <Japanese>距離制限を有効化</Japanese>
@@ -137,26 +129,6 @@
             <Key ID="STR_mavic_setting_landingProtection_description">
                 <Original>If enabled, prevent accidental damage to the Mavic when takeoff and landing.</Original>
                 <Japanese>有効化すると、Mavic離陸時及び着陸時の不測の損傷を防止します。</Japanese>
-            </Key>
-            <Key ID="STR_mavic_setting_dropAllowed_description">
-                <Original>Enable/Disable attaching grenade to Mavic and drop it.</Original>
-                <Japanese>Mavicに手榴弾を取り付けて投下する機能を有効化/無効化します。</Japanese>
-            </Key>
-            <Key ID="STR_mavic_setting_windCoef_displayName">
-                <Original>Wind Coefficient</Original>
-                <Japanese>風力係数</Japanese>
-            </Key>
-            <Key ID="STR_mavic_setting_windCoef_description">
-                <Original>Defines how much wind affects a dropped grenade.\nSpecifically, when the grenade is dropped, it is subjected to a lateral acceleration calculated as (wind x value ÷ grenade weight).</Original>
-                <Japanese>投下した手榴弾に対しての風の影響度合いを定義します。\n具体的には投下時の飛翔体に対して(風×値÷手榴弾重量)で計算された加速度が横から掛かります。</Japanese>
-            </Key>
-            <Key ID="STR_mavic_setting_allowedGrenades_displayName">
-                <Original>Allowed Grenades</Original>
-                <Japanese>許可されたグレネード</Japanese>
-            </Key>
-            <Key ID="STR_mavic_setting_allowedGrenades_description">
-                <Original>List of grenades that are allowed to be attach to the Mavic for drop. Should be CfgMagazines.</Original>
-                <Japanese>Mavicに取り付けて投下できる手榴弾のリスト。 CfgMagazinesである必要があります。</Japanese>
             </Key>
             <Key ID="STR_Mavic_Key_dropKey_displayName">
                 <Original>Grenade Drop / Turn on bottom light</Original>
@@ -280,86 +252,6 @@
             <Key ID="STR_Mavic_UserAction_ChangeBattery">
                 <Original>Change Battery</Original>
                 <Japanese>バッテリー交換</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_UserAction_Drop_Attach">
-                <Original>Attach Grenade</Original>
-                <Japanese>グレネードを装着</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_UserAction_Drop_Detach">
-                <Original>Detach Grenade</Original>
-                <Japanese>グレネードを取り外す</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M67_displayName">
-                <Original>M67 Hand Grenade (Impact fuse)</Original>
-                <Japanese>M67 手榴弾 (接触信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M67_displayShort">
-                <Original>M67 (Impact)</Original>
-                <Japanese>M67 (衝撃信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M67_description">
-                <Original>M67 Hand Grenade (RGO)&lt;br/&gt;Fuse is changed to impact for dropping from Drone, but can still be thrown by hand.</Original>
-                <Japanese>M67 手榴弾 (RGO)&lt;br/&gt;ドローンから投下するために接触信管へと変えられているが、手で投げることも可能。</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_V40_displayName">
-                <Original>V40 Mini Grenade (Impact fuse)</Original>
-                <Japanese>V40 小型手榴弾 (接触信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_V40_displayShort">
-                <Original>V40 (Impact)</Original>
-                <Japanese>V40 (衝撃信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_V40_description">
-                <Original>V40 Mini Grenade (RGN)&lt;br/&gt;Fuse is changed to impact for dropping from Drone, but can still be thrown by hand.</Original>
-                <Japanese>V40 小型手榴弾 (RGN)&lt;br/&gt;ドローンから投下するために接触信管へと変えられているが、手で投げることも可能。</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_F1_displayName">
-                <Original>F1 Hand Grenade (Impact fuse)</Original>
-                <Japanese>F1 手榴弾 (接触信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_F1_displayShort">
-                <Original>F1 (Impact)</Original>
-                <Japanese>F1 (衝撃信管)</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_F1_description">
-                <Original>F1 Hand Grenade (RGO)&lt;br/&gt;Fuse is changed to impact for dropping from Drone, but can still be thrown by hand.</Original>
-                <Japanese>F1 手榴弾 (RGO)&lt;br/&gt;ドローンから投下するために接触信管へと変えられているが、手で投げることも可能。</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_VOG25_displayName">
-                <Original>VOG-25 40mm HE</Original>
-                <Japanese>VOG-25 40mm 榴弾</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_VOG25_displayShort">
-                <Original>VOG-25</Original>
-                <Japanese>VOG-25</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_VOG25_description">
-                <Original>VOG-25 40mm Grenade&lt;br/&gt;Modified to be mounted on a Mavic Drone, also can be thrown by hand.</Original>
-                <Japanese>VOG-25 40mm 榴弾&lt;br/&gt;ドローンへ搭載するための改造がなされているうえ、手で投げることも可能。</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_TBG_displayName">
-                <Original>VG-40TB 40mm Thermobaric</Original>
-                <Japanese>VG-40TB 40mm サーモバリック</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_TBG_displayShort">
-                <Original>VG-40TB</Original>
-                <Japanese>VG-40TB</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_TBG_description">
-                <Original>VG-40TB 40mm Thermobaric Grenade&lt;br/&gt;Modified to be mounted on a Mavic Drone, also can be thrown by hand.</Original>
-                <Japanese>VG-40TB 40mm サーモバリック榴弾&lt;br/&gt;ドローンへ搭載するための改造がなされているうえ、手で投げることも可能。</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M433_displayName">
-                <Original>M433 40mm HEDP</Original>
-                <Japanese>M433 40mm HEDP</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M433_displayShort">
-                <Original>M433 HEDP</Original>
-                <Japanese>M433 HEDP</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Drop_Grenade_M433_description">
-                <Original>M433 40mm HEDP Grenade&lt;br/&gt;Modified to be mounted on a Mavic Drone, also can be thrown by hand.</Original>
-                <Japanese>M433 40mm 多目的榴弾&lt;br/&gt;ドローンへ搭載するための改造がなされているうえ、手で投げることも可能。</Japanese>
             </Key>
         </Container>
     </Package>

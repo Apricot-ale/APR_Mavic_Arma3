@@ -126,37 +126,6 @@
 ] call CBA_fnc_addSetting;
 
 [
-	"mavic_drop_setting_dropAllowed",
-	"CHECKBOX",
-	["STR_mavic_setting_dropAllowed_displayName","STR_mavic_setting_dropAllowed_description"],
-	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Grenades"],
-	true,
-	1,
-	{ publicVariable "mavic_drop_setting_dropAllowed" }
-] call CBA_fnc_addSetting;
-
-[
-	"mavic_drop_setting_windCoef",
-	"SLIDER",
-	["STR_mavic_setting_windCoef_displayName","STR_mavic_setting_windCoef_description"],
-	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Grenades"],
-	[0, 0.4, 0.11, 2],
-	1,
-	{ publicVariable "mavic_drop_setting_windCoef" },
-	true
-] call CBA_fnc_addSetting;
-
-[
-	"mavic_drop_setting_allowedGrenades",
-	"EDITBOX",
-	["STR_mavic_setting_allowedGrenades_displayName", "STR_mavic_setting_allowedGrenades_description"],
-	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Grenades"],
-	"['Mavic_M67', 'Mavic_V40', 'Mavic_F1', 'Mavic_VOG25', 'Mavic_TBG', 'Mavic_M433']",
-	1,
-	{ publicVariable "mavic_drop_setting_allowedGrenades" }
-] call CBA_fnc_addSetting;
-
-[
 	"STR_mavic_setting_MOD",
 	"mavic_key_dropKey",
 	["STR_Mavic_Key_dropKey_displayName","STR_Mavic_Key_dropKey_description"],

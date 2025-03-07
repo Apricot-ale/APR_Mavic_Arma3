@@ -17,7 +17,7 @@ params ["_uav"];
 waitUntil {!isNull player && player == player};
 
 _dropId = _uav addAction [
-	["<t color='#FF0000'>", localize "STR_Mavic_UserAction_Drop_Attach", "</t>"] joinString "",
+	["<t color='#FF0000'>", localize "STR_Mavic_Drop_UserAction_Drop_Attach", "</t>"] joinString "",
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		_this call mavic_drop_fnc_uiGrenadeSelector;
@@ -40,7 +40,7 @@ _dropId = _uav addAction [
 ];
 
 _detachId = _uav addAction [
-	["<t color='#00FF00'>", localize "STR_Mavic_UserAction_Drop_Detach", "</t>"] joinString "",
+	["<t color='#00FF00'>", localize "STR_Mavic_Drop_UserAction_Drop_Detach", "</t>"] joinString "",
 	{
 		params ["_target", "_caller", "_actionId", "_arguments"];
 		_this call mavic_drop_fnc_detach_uiGrenadeSelector;
