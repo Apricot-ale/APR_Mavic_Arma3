@@ -10,6 +10,7 @@ class CfgWeapons
 		picture = "\mavik\interface\game\Mavick_map.paa";
 		model = "\mavik\mavik3.p3d";
 		descriptionShort = "$STR_Mavic_Item_Mavic3_description";
+		ACE_asItem = 1;
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{
 			mass = 20;
