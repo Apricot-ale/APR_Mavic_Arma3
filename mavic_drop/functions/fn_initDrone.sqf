@@ -34,12 +34,14 @@ _holder = objNull;
 if (_grenadeLive isEqualTo 1e+10) then {
 	_holder = _grenadeAmmo createVehicle [0,0,1000];
 	_holder attachTo [_uav, _selectionAmmo];
+	[_holder, _uav] remoteExecCall ["disableCollisionWith", 0, _uav];
 	_holder setVectorDirandUp [[0,0,-1],[0.1,0.1,1]];
 } else {
 	_holder = "GroundWeaponHolder_Scripted" createVehicle [0,0,1000];
 	_holder addMagazineCargoGlobal [_grenade, 1];
 	_holder lockInventory true;
 	_holder attachTo [_uav, _selectionMagazine];
+	[_holder, _uav] remoteExecCall ["disableCollisionWith", 0, _uav];
 	
 	[_holder, _uav] spawn {
 		params ["_target", "_vehicle"];

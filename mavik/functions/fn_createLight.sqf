@@ -28,6 +28,7 @@ if (mavic_setting_lightAllowed) then {
 	_lightObj setVectorDirandUp [[0,0,-1], [0,1,0]];
 	_lightObj attachTo [_uav,[0,0,-0.05]];
 	_lightObj setVectorDirandUp [[0,0,-1], [0,1,0]];
+	[_lightObj, _uav] remoteExecCall ["disableCollisionWith", 0, _uav];
 };
 
 _uav setVariable ["mavic_var_lightStatus", [_lightObj, _lightOn], true];
