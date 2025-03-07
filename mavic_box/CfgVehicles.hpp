@@ -28,11 +28,6 @@ class CfgVehicles
 				name = "ItemMavic3T";
 				count = 10;
 			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 10;
-			};
 			class _xx_O_UavTerminal
 			{
 				name = "O_UavTerminal";
@@ -68,17 +63,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3
 			{
 				name = "ItemMavic3";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_B_UavTerminal
 			{
@@ -98,17 +89,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_B_UavTerminal
 			{
@@ -142,17 +129,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3
 			{
 				name = "ItemMavic3";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_O_UavTerminal
 			{
@@ -172,17 +155,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_O_UavTerminal
 			{
@@ -204,17 +183,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3
 			{
 				name = "ItemMavic3";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_I_UavTerminal
 			{
@@ -234,17 +209,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_I_UavTerminal
 			{
@@ -266,17 +237,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3
 			{
 				name = "ItemMavic3";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_I_E_UavTerminal
 			{
@@ -296,17 +263,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_I_E_UavTerminal
 			{
@@ -329,17 +292,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3
 			{
 				name = "ItemMavic3";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_C_UavTerminal
 			{
@@ -359,17 +318,13 @@ class CfgVehicles
 				count = 5;
 			};
 		};
+		class TransportWeapons {};
 		class TransportItems
 		{
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
 				count = 2;
-			};
-			class _xx_ACE_UAVBattery
-			{
-				name = "ACE_UAVBattery";
-				count = 5;
 			};
 			class _xx_C_UavTerminal
 			{
