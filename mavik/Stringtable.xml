@@ -217,7 +217,15 @@
                 <Russian>Нижняя подсветка вон</Russian>
                 <Japanese>底部補助ライト オフ</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Vehicle_Mavic3_displayName">
+                <Original>DJI Mavic 3E</Original>
+                <Japanese>DJI Mavic 3E</Japanese>
+            </Key>
             <Key ID="STR_Mavic_Item_Mavic3_displayName">
+                <Original>DJI Mavic 3E</Original>
+                <Japanese>DJI Mavic 3E</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3_Magazine_displayName">
                 <Original>DJI Mavic 3E</Original>
                 <Japanese>DJI Mavic 3E</Japanese>
             </Key>
@@ -225,7 +233,15 @@
                 <Original>FPV Recon Drone&lt;br/&gt;Put on the ground to deploy it.</Original>
                 <Japanese>一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Vehicle_Mavic3T_displayName">
+                <Original>DJI Mavic 3T</Original>
+                <Japanese>DJI Mavic 3T</Japanese>
+            </Key>
             <Key ID="STR_Mavic_Item_Mavic3T_displayName">
+                <Original>DJI Mavic 3T</Original>
+                <Japanese>DJI Mavic 3T</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3T_Magazine_displayName">
                 <Original>DJI Mavic 3T</Original>
                 <Japanese>DJI Mavic 3T</Japanese>
             </Key>

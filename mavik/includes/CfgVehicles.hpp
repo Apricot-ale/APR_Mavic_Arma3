@@ -12,7 +12,7 @@ class CfgVehicles
 	{
 		author = "$STR_Mavic_Author";
 		scope = 0;
-		displayName = "$STR_Mavic_Item_Mavic3_displayName";
+		displayName = "$STR_Mavic_Vehicle_Mavic3_displayName";
 		mapSize = 4;
 		uavCameraDriverPos = "pip_pilot_pos";
 		uavCameraDriverDir = "pip_pilot_dir";
@@ -349,11 +349,11 @@ class CfgVehicles
 	};
 	class Mavic3_drone_base_F: Mavic_drone_base_F
 	{
-		displayName = "$STR_Mavic_Item_Mavic3_displayName";
+		displayName = "$STR_Mavic_Vehicle_Mavic3_displayName";
 	};
 	class Mavic3T_drone_base_F: Mavic_drone_base_F
 	{
-		displayName = "$STR_Mavic_Item_Mavic3T_displayName";
+		displayName = "$STR_Mavic_Vehicle_Mavic3T_displayName";
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","Ti"};
