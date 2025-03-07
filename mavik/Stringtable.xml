@@ -261,42 +261,6 @@
                 <Original>FPV Recon Drone with Thermal Vision&lt;br/&gt;Put on the ground to deploy it.</Original>
                 <Japanese>サーマルビジョン付き一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
             </Key>
-            <Key ID="STR_Mavic_Item_Box_displayName">
-                <Original>Mavic Drone Box [ALL IN ONE]</Original>
-                <Japanese>Mavic ドローン箱 [全部入り]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3E_NATO_displayName">
-                <Original>Mavic 3E Drone Box [NATO]</Original>
-                <Japanese>Mavic 3E ドローン箱 [NATO]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3T_NATO_displayName">
-                <Original>Mavic 3T Drone Box [NATO]</Original>
-                <Japanese>Mavic 3T ドローン箱 [NATO]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3E_CSAT_displayName">
-                <Original>Mavic 3E Drone Box [CSAT]</Original>
-                <Japanese>Mavic 3E ドローン箱 [CSAT]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3T_CSAT_displayName">
-                <Original>Mavic 3T Drone Box [CSAT]</Original>
-                <Japanese>Mavic 3T ドローン箱 [CSAT]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3E_AAF_displayName">
-                <Original>Mavic 3E Drone Box [AAF]</Original>
-                <Japanese>Mavic 3E ドローン箱 [AAF]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3T_AAF_displayName">
-                <Original>Mavic 3T Drone Box [AAF]</Original>
-                <Japanese>Mavic 3T ドローン箱 [AAF]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3E_CIV_displayName">
-                <Original>Mavic 3E Drone Box [Civilian]</Original>
-                <Japanese>Mavic 3E ドローン箱 [Civilian]</Japanese>
-            </Key>
-            <Key ID="STR_Mavic_Item_Box_3T_CIV_displayName">
-                <Original>Mavic 3T Drone Box [Civilian]</Original>
-                <Japanese>Mavic 3T ドローン箱 [Civilian]</Japanese>
-            </Key>
             <Key ID="STR_Mavic_UserAction_DisassembleUAV">
                 <Original>Put Mavic in inventory</Original>
                 <Japanese>Mavicをインベントリにしまう</Japanese>
