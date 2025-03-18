@@ -131,12 +131,28 @@
                 <Japanese>有効化すると、Mavic離陸時及び着陸時の不測の損傷を防止します。</Japanese>
             </Key>
             <Key ID="STR_Mavic_Key_dropKey_displayName">
-                <Original>Grenade Drop / Turn on bottom light</Original>
-                <Japanese>グレネード投下/底部ライト点灯</Japanese>
+                <Original>Grenade Drop / Turn Bottom light</Original>
+                <Japanese>グレネード投下/底部ライト点灯消灯</Japanese>
             </Key>
             <Key ID="STR_Mavic_Key_dropKey_description">
-                <Original>Used to drop the attached grenades from Mavic.\nIt is also used to turn on the bottom auxiliary light.</Original>
-                <Japanese>Mavicに取り付けた手榴弾を投下するために使用。\n底部補助ライトを点灯させるのにも使用します。</Japanese>
+                <Original>Used to drop the attached grenades from Mavic.\nIt is also used to switch the bottom auxiliary light.</Original>
+                <Japanese>Mavicに取り付けた手榴弾を投下するために使用。\n底部補助ライトを点灯消灯させるのにも使用します。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Key_dropOnlyKey_displayName">
+                <Original>Grenade Drop (No Light)</Original>
+                <Japanese>グレネード投下 (ライトなし)</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Key_dropOnlyKey_description">
+                <Original>Used to drop the attached grenades from Mavic.\nHowever, this is not realistic (Mavic uses a light signal to send a grenade drop command)\nAlso, even if the light does not switched, the light turn on and off message will be displayed at the time of drop as an indicator.</Original>
+                <Japanese>Mavicに取り付けた手榴弾を投下するために使用。\nしかし、これは現実的ではありません (Mavicはライトのための信号を使用して手榴弾投下コマンドを送信します)\nまた、ライトが点灯しない場合でも、投下時にはそのインジケーターとして照明をオンオフしたというメッセージが表示されます。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Key_lightOnlyKey_displayName">
+                <Original>Turn Bottom light (No Drop)</Original>
+                <Japanese>底部ライト点灯消灯 (投下なし)</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Key_lightOnlyKey_description">
+                <Original>Used to switch the bottom auxiliary light.\nHowever, this is not realistic (Mavic uses a light signal to send a grenade drop command)</Original>
+                <Japanese>底部補助ライトを点灯消灯させるために使用。\nしかし、これは現実的ではありません (Mavicはライトのための信号を使用して手榴弾投下コマンドを送信します)</Japanese>
             </Key>
             <Key ID="STR_Mavic_HUD_Mode_Flight">
                 <Original>N Mode</Original>

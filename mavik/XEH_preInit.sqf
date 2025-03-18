@@ -129,7 +129,25 @@
 	"STR_mavic_setting_MOD",
 	"mavic_key_dropKey",
 	["STR_Mavic_Key_dropKey_displayName","STR_Mavic_Key_dropKey_description"],
-	{[player] call Mavic_fnc_checkUAVGrenadeDrop},
+	{[player, 2] call Mavic_fnc_checkUAVGrenadeDrop},
 	{},
 	[DIK_G, [false, false, false]]
+] call CBA_fnc_addKeybind;
+
+[
+	"STR_mavic_setting_MOD",
+	"mavic_key_lightOnlyKey",
+	["STR_Mavic_Key_lightOnlyKey_displayName","STR_Mavic_Key_lightOnlyKey_description"],
+	{[player, 1] call Mavic_fnc_checkUAVGrenadeDrop},
+	{},
+	[0, [false, false, false]]
+] call CBA_fnc_addKeybind;
+
+[
+	"STR_mavic_setting_MOD",
+	"mavic_key_dropOnlyKey",
+	["STR_Mavic_Key_dropOnlyKey_displayName","STR_Mavic_Key_dropOnlyKey_description"],
+	{[player, 0] call Mavic_fnc_checkUAVGrenadeDrop},
+	{},
+	[0, [false, false, false]]
 ] call CBA_fnc_addKeybind;
