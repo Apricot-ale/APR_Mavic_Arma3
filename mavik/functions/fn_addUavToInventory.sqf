@@ -16,10 +16,16 @@
  */
 params ["_uav", "_player"];
 
-private _itemType = ["Item_Mavic3", "Item_Mavic3T"] select ((typeOf _uav) isKindOf "Mavic3T_drone_base_F");
+private _uavType = typeOf _uav;
+private _itemType = switch (_uavType) do {
+	case (_uavType isKindOf "Mavic3X_drone_base_F"): { "Item_Mavic3X" };
+	case (_uavType isKindOf "Mavic3N_drone_base_F"): { "Item_Mavic3N" };
+	case (_uavType isKindOf "Mavic3T_drone_base_F"): { "Item_Mavic3T" };
+	case (_uavType isKindOf "Mavic3_drone_base_F"): { "Item_Mavic3" };
+	default { "Item_Mavic3" };
+};
 
-private _fuel = fuel _uav;
-_fuel = round (_fuel * 100);
+private _fuel = round (fuel _uav) * 100;
 _player addMagazine [_itemType, _fuel];
 private _attachedGrenades = _uav getVariable ["mavic_drop_var_grenadeList", []];
 
