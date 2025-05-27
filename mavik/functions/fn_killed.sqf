@@ -15,7 +15,8 @@
  */
 params ["_uav"];
 
-private _lightObj = (_uav getVariable ["mavic_var_lightStatus", [objNull, false]];) select 0;
+private _lightStatus = _uav getVariable ["mavic_var_lightStatus", [objNull, false]];
+private _lightObj = _lightStatus select 0;
 if !(isNull _lightObj) then {deleteVehicle _lightObj;};
 
 {_x setDamage 1;} forEach (crew _uav);
