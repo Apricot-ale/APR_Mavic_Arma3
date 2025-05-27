@@ -35,14 +35,17 @@ if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
 	
 }] call BIS_fnc_addScriptedEventHandler;
 
-private _name = "DynamicBlur";
-private _priority = 500;
-private _handle_signal = -1;
-waitUntil { _handle_signal = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_signal > 0; };
-mavic_ppEffect_signalBlur = _handle_signal;
+_ppEffect = {
+	private _name = "DynamicBlur";
+	private _priority = 500;
+	private _handle_signal = -1;
+	waitUntil { _handle_signal = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_signal > 0; };
+	mavic_ppEffect_signalBlur = _handle_signal;
 
-private _handle_zoom = -1;
-waitUntil { _handle_zoom = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_zoom > 0; };
-mavic_ppEffect_zoomBlur = _handle_zoom;
+	private _handle_zoom = -1;
+	waitUntil { _handle_zoom = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_zoom > 0; };
+	mavic_ppEffect_zoomBlur = _handle_zoom;
+};
+0 spawn _ppEffect;
 
 true
