@@ -28,4 +28,16 @@ class CfgWeapons
 		displayName = "$STR_Mavic_Item_Mavic3T_displayName";
 		descriptionShort = "$STR_Mavic_Item_Mavic3T_description";
 	};
+	class ItemMavic3N: ItemMavic
+	{
+		scope = 2;
+		displayName = "$STR_Mavic_Item_Mavic3N_displayName";
+		descriptionShort = "$STR_Mavic_Item_Mavic3N_description";
+	};
+	class ItemMavic3X: ItemMavic
+	{
+		scope = 2;
+		displayName = "$STR_Mavic_Item_Mavic3X_displayName";
+		descriptionShort = "$STR_Mavic_Item_Mavic3X_description";
+	};
 };

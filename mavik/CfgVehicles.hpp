@@ -395,6 +395,46 @@ class CfgVehicles
 			};
 		};
 	};
+	class Mavic3N_drone_base_F: Mavic_drone_base_F
+	{
+		displayName = "$STR_Mavic_Vehicle_Mavic3N_displayName";
+		class ViewOptics: ViewOptics
+		{
+			visionMode[] = {"Normal","NVG"};
+			thermalMode[] = {0};
+		};
+		class PilotCamera: PilotCamera
+		{
+			class OpticsIn: OpticsIn
+			{
+				class Wide: Wide
+				{
+					visionMode[] = {"Normal","NVG"};
+					thermalMode[] = {0};
+				};
+			};
+		};
+	};
+	class Mavic3X_drone_base_F: Mavic_drone_base_F
+	{
+		displayName = "$STR_Mavic_Vehicle_Mavic3X_displayName";
+		class ViewOptics: ViewOptics
+		{
+			visionMode[] = {"Normal","NVG","Ti"};
+			thermalMode[] = {0,1,6};
+		};
+		class PilotCamera: PilotCamera
+		{
+			class OpticsIn: OpticsIn
+			{
+				class Wide: Wide
+				{
+					visionMode[] = {"Normal","NVG","Ti"};
+					thermalMode[] = {0,1,6};
+				};
+			};
+		};
+	};
 	class Mavic_3_OPF: Mavic3_drone_base_F
 	{
 		scope = 2;
@@ -459,6 +499,70 @@ class CfgVehicles
 		crew = "C_UAV_AI_F";
 		typicalCargo[] = {"C_UAV_AI_F"};
 	};
+	class Mavic_3N_OPF: Mavic3N_drone_base_F
+	{
+		scope = 2;
+		side = 0;
+		faction = "OPF_F";
+		crew = "O_UAV_AI_F";
+		typicalCargo[] = {"O_UAV_AI_F"};
+	};
+	class Mavic_3N_BLU: Mavic3N_drone_base_F
+	{
+		scope = 2;
+		side = 1;
+		faction = "BLU_F";
+		crew = "B_UAV_AI_F";
+		typicalCargo[] = {"B_UAV_AI_F"};
+	};
+	class Mavic_3N_IND: Mavic3N_drone_base_F
+	{
+		scope = 2;
+		side = 2;
+		faction = "IND_F";
+		crew = "I_UAV_AI_F";
+		typicalCargo[] = {"I_UAV_AI_F"};
+	};
+	class Mavic_3N_CIV: Mavic3N_drone_base_F
+	{
+		scope = 2;
+		side = 3;
+		faction = "CIV_F";
+		crew = "C_UAV_AI_F";
+		typicalCargo[] = {"C_UAV_AI_F"};
+	};
+	class Mavic_3X_OPF: Mavic3X_drone_base_F
+	{
+		scope = 2;
+		side = 0;
+		faction = "OPF_F";
+		crew = "O_UAV_AI_F";
+		typicalCargo[] = {"O_UAV_AI_F"};
+	};
+	class Mavic_3X_BLU: Mavic3X_drone_base_F
+	{
+		scope = 2;
+		side = 1;
+		faction = "BLU_F";
+		crew = "B_UAV_AI_F";
+		typicalCargo[] = {"B_UAV_AI_F"};
+	};
+	class Mavic_3X_IND: Mavic3X_drone_base_F
+	{
+		scope = 2;
+		side = 2;
+		faction = "IND_F";
+		crew = "I_UAV_AI_F";
+		typicalCargo[] = {"I_UAV_AI_F"};
+	};
+	class Mavic_3X_CIV: Mavic3X_drone_base_F
+	{
+		scope = 2;
+		side = 3;
+		faction = "CIV_F";
+		crew = "C_UAV_AI_F";
+		typicalCargo[] = {"C_UAV_AI_F"};
+	};
 	class Item_Base_F;
 	class Item_Mavic_3_Ground: Item_Base_F
 	{
@@ -488,6 +592,38 @@ class CfgVehicles
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
+				count = 1;
+			};
+		};
+	};
+	class Item_Mavic_3N_Ground: Item_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_Mavic_Item_Mavic3N_displayName";
+		author = "$STR_Mavic_Author";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			class _xx_ItemMavic3N
+			{
+				name = "ItemMavic3N";
+				count = 1;
+			};
+		};
+	};
+	class Item_Mavic_3X_Ground: Item_Base_F
+	{
+		scope = 2;
+		scopeCurator = 2;
+		displayName = "$STR_Mavic_Item_Mavic3X_displayName";
+		author = "$STR_Mavic_Author";
+		vehicleClass = "Items";
+		class TransportItems
+		{
+			class _xx_ItemMavic3X
+			{
+				name = "ItemMavic3X";
 				count = 1;
 			};
 		};
