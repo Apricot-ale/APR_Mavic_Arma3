@@ -265,6 +265,38 @@
                 <Original>FPV Recon Drone with Thermal Vision&lt;br/&gt;Put on the ground to deploy it.</Original>
                 <Japanese>サーマルビジョン付き一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Vehicle_Mavic3N_displayName">
+                <Original>DJI Mavic 3N</Original>
+                <Japanese>DJI Mavic 3N</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3N_displayName">
+                <Original>DJI Mavic 3N</Original>
+                <Japanese>DJI Mavic 3N</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3N_Magazine_displayName">
+                <Original>DJI Mavic 3N</Original>
+                <Japanese>DJI Mavic 3N</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3N_description">
+                <Original>FPV Recon Drone with Night Vision&lt;br/&gt;Put on the ground to deploy it.</Original>
+                <Japanese>ナイトビジョン付き一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Vehicle_Mavic3X_displayName">
+                <Original>DJI Mavic 3X</Original>
+                <Japanese>DJI Mavic 3X</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3X_displayName">
+                <Original>DJI Mavic 3X</Original>
+                <Japanese>DJI Mavic 3X</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3X_Magazine_displayName">
+                <Original>DJI Mavic 3X</Original>
+                <Japanese>DJI Mavic 3X</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Item_Mavic3X_description">
+                <Original>FPV Recon Drone with Night and Thermal Vision&lt;br/&gt;Put on the ground to deploy it.</Original>
+                <Japanese>ナイトビジョン・サーマルビジョン付き一人称偵察ドローン&lt;br/&gt;地面に置くことで展開可能。</Japanese>
+            </Key>
             <Key ID="STR_Mavic_Vehicle_Mavic3W_displayName">
                 <Original>DJI Mavic 3 (Wreck)</Original>
                 <Japanese>DJI Mavic 3 (残骸)</Japanese>
