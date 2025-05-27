@@ -33,6 +33,10 @@ private _uavType = switch (_item) do {
 	case "ItemMavic3N": { "Mavic_3N" };
 	case "ItemMavic3T": { "Mavic_3T" };
 	case "ItemMavic3": { "Mavic_3" };
+	case "Item_Mavic3X": { "Mavic_3X" };
+	case "Item_Mavic3N": { "Mavic_3N" };
+	case "Item_Mavic3T": { "Mavic_3T" };
+	case "Item_Mavic3": { "Mavic_3" };
 	default { "Mavic_3" };
 };
 
