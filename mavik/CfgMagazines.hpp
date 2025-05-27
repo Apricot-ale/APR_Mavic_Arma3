@@ -27,4 +27,16 @@ class CfgMagazines
 		descriptionShort = "$STR_Mavic_Item_Mavic3T_description";
 		displayName = "$STR_Mavic_Item_Mavic3T_Magazine_displayName";
 	};
+	class Item_Mavic3N: Item_Mavic
+	{
+		scope = 1;
+		descriptionShort = "$STR_Mavic_Item_Mavic3N_description";
+		displayName = "$STR_Mavic_Item_Mavic3N_Magazine_displayName";
+	};
+	class Item_Mavic3X: Item_Mavic
+	{
+		scope = 1;
+		descriptionShort = "$STR_Mavic_Item_Mavic3X_description";
+		displayName = "$STR_Mavic_Item_Mavic3X_Magazine_displayName";
+	};
 };

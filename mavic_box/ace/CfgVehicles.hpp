@@ -7,7 +7,39 @@ class CfgVehicles
 		editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_AAF_Equip_F.jpg";
 		displayName = "$STR_Mavic_Box_AIO_Mavic3A_Items_F_displayName";
 		hiddenSelectionsTextures[] = {"\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_indep_co.paa","\A3\Supplies_F_Exp\Ammoboxes\Data\equipment_box_indep_ca.paa"};
-		class TransportMagazines{};
+		class TransportMagazines
+		{
+			class _xx_Mavic_M67
+			{
+				magazine = "Mavic_M67";
+				count = 10;
+			};
+			class _xx_Mavic_V40
+			{
+				magazine = "Mavic_V40";
+				count = 10;
+			};
+			class _xx_Mavic_F1
+			{
+				magazine = "Mavic_F1";
+				count = 10;
+			};
+			class _xx_Mavic_VOG25
+			{
+				magazine = "Mavic_VOG25";
+				count = 10;
+			};
+			class _xx_Mavic_Mavic_TBG
+			{
+				magazine = "Mavic_TBG";
+				count = 10;
+			};
+			class _xx_Mavic_M433
+			{
+				magazine = "Mavic_M433";
+				count = 10;
+			};
+		};
 		class TransportWeapons {};
 		class TransportItems
 		{
@@ -24,6 +56,16 @@ class CfgVehicles
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
+				count = 10;
+			};
+			class _xx_ItemMavic3N
+			{
+				name = "ItemMavic3N";
+				count = 10;
+			};
+			class _xx_ItemMavic3X
+			{
+				name = "ItemMavic3X";
 				count = 10;
 			};
 			class _xx_O_UavTerminal
@@ -89,6 +131,54 @@ class CfgVehicles
 			class _xx_ItemMavic3T
 			{
 				name = "ItemMavic3T";
+				count = 2;
+			};
+			class _xx_B_UavTerminal
+			{
+				name = "B_UavTerminal";
+				count = 2;
+			};
+		};
+	};
+	class Mavic_Box_NATO_Mavic3N_Items_F: Mavic_Box_NATO_Mavic3E_Items_F
+	{
+		displayName = "$STR_Mavic_Box_NATO_Mavic3N_Items_F_displayName";
+		class TransportMagazines{};
+		class TransportWeapons {};
+		class TransportItems
+		{
+			class _xx_ACE_UAVBattery
+			{
+				name = "ACE_UAVBattery";
+				count = 5;
+			};
+			class _xx_ItemMavic3N
+			{
+				name = "ItemMavic3N";
+				count = 2;
+			};
+			class _xx_B_UavTerminal
+			{
+				name = "B_UavTerminal";
+				count = 2;
+			};
+		};
+	};
+	class Mavic_Box_NATO_Mavic3X_Items_F: Mavic_Box_NATO_Mavic3E_Items_F
+	{
+		displayName = "$STR_Mavic_Box_NATO_Mavic3X_Items_F_displayName";
+		class TransportMagazines{};
+		class TransportWeapons {};
+		class TransportItems
+		{
+			class _xx_ACE_UAVBattery
+			{
+				name = "ACE_UAVBattery";
+				count = 5;
+			};
+			class _xx_ItemMavic3X
+			{
+				name = "ItemMavic3X";
 				count = 2;
 			};
 			class _xx_B_UavTerminal
