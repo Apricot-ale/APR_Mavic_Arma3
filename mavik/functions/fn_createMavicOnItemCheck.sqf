@@ -17,25 +17,24 @@
  */
 params ["_unit", "_container", "_item"];
 
-if !(_item in ["ItemMavic3T", "ItemMavic3", "ItemMavic", "Item_Mavic3T", "Item_Mavic3", "Item_Mavic"]) exitWith {};
 if ((typeOf _container) != "GroundWeaponHolder") exitWith {};
+if !(_item in ["ItemMavic", "ItemMavic3", "ItemMavic3N", "ItemMavic3T", "ItemMavic3X", "Item_Mavic", "Item_Mavic3", "Item_Mavic3T", "Item_Mavic3N", "Item_Mavic3X"]) exitWith {};
 
 private _fuelReal = 100;
-private _uavType = ["Mavic_3", "Mavic_3T"] select (_item == "ItemMavic3T");
-
-if (_item in ["Item_Mavic3T", "Item_Mavic3", "Item_Mavic"]) then {
-	private _magazines = magazinesAmmo _container;
-	private _containerCargo = magazineCargo _container;
-	private _magazineIndex = _containerCargo find _item;
-	if (_magazineIndex != -1) then {
-		private _magazineSelected = _magazines select _magazineIndex;
-		_fuelReal = _magazineSelected select 1;
-	};
-	_fuelReal = _fuelReal / 100;
-	_uavType = ["Mavic_3", "Mavic_3T"] select (_item == "Item_Mavic3T");
+private _magazineIndex = (magazineCargo _container) find _item;
+if (_magazineIndex != -1) then {
+	private _magazineSelected = (magazinesAmmo _container) select _magazineIndex;
+	_fuelReal = (_magazineSelected select 1) / 100;
 };
-
 _container addItemCargo [_item, -1];
+
+private _uavType = switch (_item) do {
+	case "ItemMavic3X": { "Mavic_3X" };
+	case "ItemMavic3N": { "Mavic_3N" };
+	case "ItemMavic3T": { "Mavic_3T" };
+	case "ItemMavic3": { "Mavic_3" };
+	default { "Mavic_3" };
+};
 
 private _uavClass = switch (side _unit) do {
 	case EAST: { _uavType + "_OPF" };
