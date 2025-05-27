@@ -15,4 +15,4 @@
  */
 params ["_uav"];
 
-alive _uav && player canAdd "Mavic3T_drone_base_F" && cameraOn == player && {((speed _uav) < 1) && {!(isEngineOn _uav)}}
+alive _uav && player canAdd "Mavic_drone_base_F" && cameraOn == player && {((speed _uav) < 1) && {!(isEngineOn _uav)}}
