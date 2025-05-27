@@ -37,29 +37,28 @@ if (typeOf _uav isKindOf "Mavic_drone_base_F") exitWith {
 		_text ctrlSetText format ["%1", localize "STR_Mavic_HUD_DropMessage"];
 		_uav setVariable ["mavic_var_lightStatus", [_lightObj, true], true];
 	};
+	[missionNamespace, "mavic_EH_showMessage", []] call BIS_fnc_callScriptedEventHandler;
 	switch (_switch) do
 	{
 		case 0: {
-			[missionNamespace, "mavic_EH_showMessage", []] call BIS_fnc_callScriptedEventHandler;
 			[_player] call mavic_drop_fnc_dropGrenade;
 		};
 		case 1: {
 			if (mavic_setting_lightAllowed) then {
 				if (_lightOn) then {
-					_lightObj hideObjectGlobal false;
-				} else {
 					_lightObj hideObjectGlobal true;
+				} else {
+					_lightObj hideObjectGlobal false;
 				};
 			};
 		};
 		case 2: {
-			[missionNamespace, "mavic_EH_showMessage", []] call BIS_fnc_callScriptedEventHandler;
 			[_player] call mavic_drop_fnc_dropGrenade;
 			if (mavic_setting_lightAllowed) then {
 				if (_lightOn) then {
-					_lightObj hideObjectGlobal false;
-				} else {
 					_lightObj hideObjectGlobal true;
+				} else {
+					_lightObj hideObjectGlobal false;
 				};
 			};
 		};
