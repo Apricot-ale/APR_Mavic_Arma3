@@ -17,11 +17,11 @@
 params ["_uav", "_player"];
 
 private _uavType = typeOf _uav;
-private _itemType = switch (_uavType) do {
-	case (_uavType isKindOf "Mavic3X_drone_base_F"): { "Item_Mavic3X" };
-	case (_uavType isKindOf "Mavic3N_drone_base_F"): { "Item_Mavic3N" };
-	case (_uavType isKindOf "Mavic3T_drone_base_F"): { "Item_Mavic3T" };
+private _itemType = switch (true) do {
 	case (_uavType isKindOf "Mavic3_drone_base_F"): { "Item_Mavic3" };
+	case (_uavType isKindOf "Mavic3T_drone_base_F"): { "Item_Mavic3T" };
+	case (_uavType isKindOf "Mavic3N_drone_base_F"): { "Item_Mavic3N" };
+	case (_uavType isKindOf "Mavic3X_drone_base_F"): { "Item_Mavic3X" };
 	default { "Item_Mavic3" };
 };
 
