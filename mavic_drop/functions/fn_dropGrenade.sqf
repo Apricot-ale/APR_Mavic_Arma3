@@ -40,9 +40,9 @@ _scaledWind = [
 ];
 _uavVelocity = velocity _uav;
 
-_projectile = _grenadeAmmo createVehicle [0,0,1000];
+_projectile = _grenadeAmmo createVehicle [(getPos _uav #0),(getPos _uav #1),(getPos _uav #2) + 500];
 [_projectile, _uav] remoteExecCall ["disableCollisionWith", 0, _uav];
-_projectile setPos (_uav modelToWorld [0, 0, -0.3]);
+_projectile setPosASL (_uav modelToWorldWorld [0, 0, -1]);
 _projectile setVectorDirandUp [[0,0,-1],[0.1,0.1,1]];
 _projectile setVelocity [
 	(_uavVelocity select 0) + (_scaledWind select 0),
