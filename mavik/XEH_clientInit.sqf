@@ -39,11 +39,19 @@ _ppEffect = {
 	private _name = "DynamicBlur";
 	private _priority = 500;
 	private _handle_signal = -1;
-	waitUntil { _handle_signal = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_signal > 0; };
+	while { _handle_signal <= 0 } do {
+		_handle_signal = ppEffectCreate [_name, _priority];
+		_priority = _priority + 1;
+		uiSleep 0.01;
+	};
 	mavic_ppEffect_signalBlur = _handle_signal;
 
 	private _handle_zoom = -1;
-	waitUntil { _handle_zoom = ppEffectCreate [_name, _priority]; _priority = _priority + 1; _handle_zoom > 0; };
+	while { _handle_zoom <= 0 } do {
+		_handle_zoom = ppEffectCreate [_name, _priority];
+		_priority = _priority + 1;
+		uiSleep 0.01;
+	};
 	mavic_ppEffect_zoomBlur = _handle_zoom;
 };
 0 spawn _ppEffect;
