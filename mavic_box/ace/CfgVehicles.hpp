@@ -250,6 +250,54 @@ class CfgVehicles
 			};
 		};
 	};
+	class Mavic_Box_CSAT_Mavic3N_Items_F: Mavic_Box_CSAT_Mavic3E_Items_F
+	{
+		displayName = "$STR_Mavic_Box_CSAT_Mavic3N_Items_F_displayName";
+		class TransportMagazines{};
+		class TransportWeapons {};
+		class TransportItems
+		{
+			class _xx_ACE_UAVBattery
+			{
+				name = "ACE_UAVBattery";
+				count = 5;
+			};
+			class _xx_ItemMavic3N
+			{
+				name = "ItemMavic3N";
+				count = 2;
+			};
+			class _xx_O_UavTerminal
+			{
+				name = "O_UavTerminal";
+				count = 2;
+			};
+		};
+	};
+	class Mavic_Box_CSAT_Mavic3X_Items_F: Mavic_Box_CSAT_Mavic3E_Items_F
+	{
+		displayName = "$STR_Mavic_Box_CSAT_Mavic3X_Items_F_displayName";
+		class TransportMagazines{};
+		class TransportWeapons {};
+		class TransportItems
+		{
+			class _xx_ACE_UAVBattery
+			{
+				name = "ACE_UAVBattery";
+				count = 5;
+			};
+			class _xx_ItemMavic3X
+			{
+				name = "ItemMavic3X";
+				count = 2;
+			};
+			class _xx_O_UavTerminal
+			{
+				name = "O_UavTerminal";
+				count = 2;
+			};
+		};
+	};
 	class Mavic_Box_AAF_Mavic3E_Items_F: Mavic_Box_AIO_Mavic3A_Items_F
 	{
 		editorPreview = "\A3\EditorPreviews_F_Exp\Data\CfgVehicles\Box_AAF_Equip_F.jpg";

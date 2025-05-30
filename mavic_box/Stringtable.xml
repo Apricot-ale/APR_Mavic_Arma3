@@ -30,6 +30,14 @@
                 <Original>Mavic 3T Drone Box [CSAT]</Original>
                 <Japanese>Mavic 3T ドローン箱 [CSAT]</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Box_CSAT_Mavic3N_Items_F_displayName">
+                <Original>Mavic 3N Drone Box [CSAT]</Original>
+                <Japanese>Mavic 3N ドローン箱 [CSAT]</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Box_CSAT_Mavic3X_Items_F_displayName">
+                <Original>Mavic 3X Drone Box [CSAT]</Original>
+                <Japanese>Mavic 3X ドローン箱 [CSAT]</Japanese>
+            </Key>
             <Key ID="STR_Mavic_Box_AAF_Mavic3E_Items_F_displayName">
                 <Original>Mavic 3E Drone Box [AAF]</Original>
                 <Japanese>Mavic 3E ドローン箱 [AAF]</Japanese>
