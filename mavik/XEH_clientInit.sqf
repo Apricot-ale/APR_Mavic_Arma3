@@ -1,3 +1,5 @@
+if (!hasInterface) exitWith {true};
+
 if (isClass(configFile >> "CfgPatches" >> "ace_main")) then { 
     private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];
 	private _id = _player addEventHandler ["Put", { _this call Mavic_fnc_createMavicOnItemCheck }];
