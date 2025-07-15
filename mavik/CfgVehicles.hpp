@@ -184,8 +184,8 @@ class CfgVehicles
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 		};
-		soundEngineOnInt[] = {"A3\Sounds_F\air\Uav_01\quad_start_full_int",0,2};
-		soundEngineOnExt[] = {"mavik\sounds\quad_engine_full_Mavic",0.56234133,1,120};
+		soundEngineOnInt[] = {"mavik\sounds\MavicOnNewIn.ogg",0.56234133,1};
+		soundEngineOnExt[] = {"mavik\sounds\MavicOnNew.ogg",0.56234133,1,200};
 		soundEngineOffInt[] = {"A3\Sounds_F\air\Uav_01\quad_stop_full_int",0,2};
 		soundEngineOffExt[] = {"mavik\sounds\quad_engine_full_Mavic",0.56234133,3,60};
 		class Sounds
@@ -212,7 +212,7 @@ class CfgVehicles
 			};
 			class EngineIn
 			{
-				sound[] = {"A3\Sounds_F\air\Uav_01\quad_engine_full_int",0,2};
+				sound[] = {"mavik\sounds\MavicEngineIn.ogg",0.56234133,1};
 				frequency = "rotorSpeed";
 				volume = "(1-camPos)*((rotorSpeed-0.75)*4)";
 			};
