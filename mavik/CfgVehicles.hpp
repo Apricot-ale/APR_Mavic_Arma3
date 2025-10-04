@@ -248,7 +248,7 @@ class CfgVehicles
 				radius = 5;
 				onlyForplayer = 1;
 				showWindow = 0;
-				condition = "[this] call Mavic_fnc_canDisassembly";
+				condition = "[this, player] call Mavic_fnc_canDisassembly";
 				statement = "[this, player] call Mavic_fnc_addUavToInventory";
 			};
 			class MAVIC_ResetCamera
