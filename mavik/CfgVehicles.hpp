@@ -32,6 +32,7 @@ class CfgVehicles
 		model = "\mavik\mavik3.p3d";
 		icon = "\mavik\interface\game\Mavick_map.paa";
 		picture = "\mavik\interface\game\Mavick_map.paa";
+		editorPreview = "\mavik\Mavic_editor.jpg";
 		altFullForce = 5000;
 		altNoForce = 6500;
 		maxSpeed = 75;
