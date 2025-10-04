@@ -16,6 +16,8 @@
  */
 params ["_uav", "_player"];
 
+_player action ["TakeBag", objNull];
+
 private _uavType = typeOf _uav;
 private _itemType = switch (true) do {
 	case (_uavType isKindOf "Mavic3_drone_base_F"): { "Item_Mavic3" };
@@ -40,4 +42,3 @@ if (_attachedGrenades isNotEqualTo []) then {
 _uav setVariable ["mavic_drop_var_grenadeList", [], true];
 deleteVehicleCrew _uav;
 deleteVehicle _uav;
-_player action ["TakeBag", objNull];
