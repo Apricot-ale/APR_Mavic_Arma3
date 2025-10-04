@@ -29,12 +29,19 @@ private _itemType = switch (true) do {
 
 private _fuel = round ((fuel _uav) * 100);
 _player addMagazine [_itemType, _fuel];
+
 private _attachedGrenades = _uav getVariable ["mavic_drop_var_grenadeList", []];
+private _WeaponHolder = objNull;
 
 if (_attachedGrenades isNotEqualTo []) then {
 	{
-		_Grenades = _x select 0;
-		_player addMagazine _Grenades;
+		_Grenade = _x select 0;
+		if (_player canAdd _Grenade) then {
+			_player addMagazine _Grenade;
+		} else {
+			if (isNull _WeaponHolder) then {_WeaponHolder = createVehicle ["GroundWeaponHolder", _player modelToWorld [0,1,0.025], [], 0, "CAN_COLLIDE"];};
+			_WeaponHolder addMagazineCargoGlobal [_Grenade, 1];
+		};
 	} forEach _attachedGrenades;
 	{deleteVehicle _x;} forEach attachedObjects _uav;
 };
