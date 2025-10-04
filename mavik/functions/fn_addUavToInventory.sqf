@@ -38,5 +38,6 @@ if (_attachedGrenades isNotEqualTo []) then {
 };
 
 _uav setVariable ["mavic_drop_var_grenadeList", [], true];
+deleteVehicleCrew _uav;
 deleteVehicle _uav;
 _player action ["TakeBag", objNull];
