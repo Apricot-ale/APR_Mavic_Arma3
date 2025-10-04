@@ -25,7 +25,7 @@ private _itemType = switch (true) do {
 	default { "Item_Mavic3" };
 };
 
-private _fuel = round (fuel _uav) * 100;
+private _fuel = round ((fuel _uav) * 100);
 _player addMagazine [_itemType, _fuel];
 private _attachedGrenades = _uav getVariable ["mavic_drop_var_grenadeList", []];
 
