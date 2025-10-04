@@ -47,5 +47,13 @@ if (_attachedGrenades isNotEqualTo []) then {
 };
 
 _uav setVariable ["mavic_drop_var_grenadeList", [], true];
+
+if (isUAVConnected _uav) then{
+    private _controller = UAVControl _uav;
+    _controller select 0 connectTerminalToUAV objNull;
+};
+
 deleteVehicleCrew _uav;
 deleteVehicle _uav;
+
+true;
