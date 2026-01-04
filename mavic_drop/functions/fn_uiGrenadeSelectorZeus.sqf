@@ -10,7 +10,9 @@
 params ["_mavic"];
 if (isNull _mavic) exitWith {};
 
-private _allowedGrenades = ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"];
+private _allowedGrenades = missionNamespace getVariable ["mavic_drop_setting_allowedGrenades", ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"]];
+_allowedGrenades = call compile _allowedGrenades;
+_allowedGrenades = _allowedGrenades apply { toUpperANSI _x };
 
 private _maxGrenades = 2;
 private _maxWeight = 750; // grams
