@@ -58,7 +58,7 @@ if (isNull _mavic) then {
 private _isMavic = (!isNull _mavic) && {alive _mavic} && {_mavic isKindOf "Mavic_drone_base_F"};
 
 if (!_isMavic) exitWith {
-	["No Mavic drone found. Place this module on a Mavic drone.", "ERROR"] call BIS_fnc_curatorHint;
+	["ERROR!", "No Mavic drone found. Place this module on a Mavic drone."] call BIS_fnc_curatorHint;
 	deleteVehicle _module;
 };
 
