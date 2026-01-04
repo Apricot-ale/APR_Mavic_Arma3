@@ -10,7 +10,9 @@ class CfgFunctions
 			class dropGrenade{};
 			class dynamicBlurToggle{};
 			class uiGrenadeSelector{};
+			class uiGrenadeSelectorZeus{};
 			class detach_uiGrenadeSelector{};
+			class moduleAttachGrenade{};
 		};
 	};
 };

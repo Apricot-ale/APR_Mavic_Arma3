@@ -110,6 +110,38 @@
                 <Original>M433 40mm HEDP Grenade&lt;br/&gt;Modified to be mounted on a Mavic Drone, also can be thrown by hand.</Original>
                 <Japanese>M433 40mm 多目的榴弾&lt;br/&gt;ドローンへ搭載するための改造がなされているうえ、手で投げることも可能。</Japanese>
             </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_displayName">
+                <Original>Attach/Detach Grenade(s) to Mavic</Original>
+                <Japanese>Mavicにグレネードを装着/取り外し</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_description">
+                <Original>Attach a grenade to a Mavic drone. Click this module, then click on a Mavic drone in the world to attach the selected grenade type.</Original>
+                <Japanese>Mavicドローンにグレネードを装着します。 このモジュールをクリックしてから、Mavicドローンをクリックして、選択したグレネードタイプを装着します。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_GrenadeType_displayName">
+                <Original>Grenade Type</Original>
+                <Japanese>グレネードの種類</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_GrenadeType_description">
+                <Original>Select the type of grenade to attach to the Mavic drones.</Original>
+                <Japanese>Mavicドローンに装着するグレネードの種類を選択します。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_Quantity_displayName">
+                <Original>Quantity</Original>
+                <Japanese>数量</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_Quantity_description">
+                <Original>Number of grenades to attach (1 or 2). Maximum 2 grenades per Mavic drone depending on weight.</Original>
+                <Japanese>装着するグレネードの数。 重量に応じてMavicドローンあたり最大2個のグレネードまで。</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_Quantity_1">
+                <Original>1 Grenade</Original>
+                <Japanese>1個のグレネード</Japanese>
+            </Key>
+            <Key ID="STR_Mavic_Module_AttachGrenade_Quantity_2">
+                <Original>2 Grenades</Original>
+                <Japanese>2個のグレネード</Japanese>
+            </Key>
         </Container>
     </Package>
 </Project>
