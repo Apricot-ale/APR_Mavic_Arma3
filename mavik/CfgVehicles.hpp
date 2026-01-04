@@ -365,10 +365,30 @@ class CfgVehicles
 	class Mavic3_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3_displayName";
+		class Exits
+		{
+			class Exit1
+			{
+				position = "pos_driver";
+				direction = "pos_driver_dir";
+				selection = "pos_driver";
+			};
+		};
+		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 	};
 	class Mavic3T_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3T_displayName";
+		class Exits
+		{
+			class Exit1
+			{
+				position = "pos_driver";
+				direction = "pos_driver_dir";
+				selection = "pos_driver";
+			};
+		};
+		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","Ti"};
@@ -399,6 +419,16 @@ class CfgVehicles
 	class Mavic3N_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3N_displayName";
+		class Exits
+		{
+			class Exit1
+			{
+				position = "pos_driver";
+				direction = "pos_driver_dir";
+				selection = "pos_driver";
+			};
+		};
+		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","NVG"};
@@ -419,6 +449,16 @@ class CfgVehicles
 	class Mavic3X_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3X_displayName";
+		class Exits
+		{
+			class Exit1
+			{
+				position = "pos_driver";
+				direction = "pos_driver_dir";
+				selection = "pos_driver";
+			};
+		};
+		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","NVG","Ti"};
