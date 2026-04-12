@@ -6,13 +6,15 @@ class CfgVehicles
 	class Mavic3X_drone_base_F;
 	class Mavic_3_OPF: Mavic3_drone_base_F
 	{
+		model = "\mavik\mavik3_opfor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_opfor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\zody_co.paa"};
 	};
 	class Mavic_3_BLU: Mavic3_drone_base_F
 	{
+		model = "\mavik\mavik3_blufor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_blufor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\cody_co.paa"};
 	};
 	class Mavic_3_IND: Mavic3_drone_base_F
 	{
@@ -22,13 +24,15 @@ class CfgVehicles
 	};
 	class Mavic_3T_OPF: Mavic3T_drone_base_F
 	{
+		model = "\mavik\mavik3_opfor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_opfor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\zody_co.paa"};
 	};
 	class Mavic_3T_BLU: Mavic3T_drone_base_F
 	{
+		model = "\mavik\mavik3_blufor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_blufor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\cody_co.paa"};
 	};
 	class Mavic_3T_IND: Mavic3T_drone_base_F
 	{
@@ -38,13 +42,15 @@ class CfgVehicles
 	};
 	class Mavic_3N_OPF: Mavic3N_drone_base_F
 	{
+		model = "\mavik\mavik3_opfor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_opfor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\zody_co.paa"};
 	};
 	class Mavic_3N_BLU: Mavic3N_drone_base_F
 	{
+		model = "\mavik\mavik3_blufor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_blufor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\cody_co.paa"};
 	};
 	class Mavic_3N_IND: Mavic3N_drone_base_F
 	{
@@ -54,13 +60,15 @@ class CfgVehicles
 	};
 	class Mavic_3X_OPF: Mavic3X_drone_base_F
 	{
+		model = "\mavik\mavik3_opfor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_opfor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\zody_co.paa"};
 	};
 	class Mavic_3X_BLU: Mavic3X_drone_base_F
 	{
+		model = "\mavik\mavik3_blufor.p3d";
 		hiddenSelections[] = {"camo"};
-		hiddenSelectionsTextures[] = {"mavik_colored\textures\body_blufor_CO.paa"};
+		hiddenSelectionsTextures[] = {"mavik\textures\cody_co.paa"};
 	};
 	class Mavic_3X_IND: Mavic3X_drone_base_F
 	{
