@@ -27,7 +27,7 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	[[0, 1, 2, 3], ["STR_mavic_setting_hudCrosshair_0", "STR_mavic_setting_hudCrosshair_1", "STR_mavic_setting_hudCrosshair_2", "STR_mavic_setting_hudCrosshair_3"], 1],
 	0,
-	{ publicVariable "mavic_setting_hudCrosshair" }
+	{}
 ] call CBA_fnc_addSetting;
 
 [
@@ -37,7 +37,7 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	[[0, 1, 2, 3, 4], ["STR_Mavic_HUD_Speed", "STR_Mavic_HUD_Speed_KMH", "STR_Mavic_HUD_Speed_MPH", "STR_Mavic_HUD_Speed_KPH", "STR_Mavic_HUD_Speed_FPS"], 0],
 	0,
-	{ publicVariable "mavic_setting_hudVSpeedUnit" }
+	{}
 ] call CBA_fnc_addSetting;
 
 [
@@ -47,7 +47,7 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	[[0, 1, 2, 3, 4], ["STR_Mavic_HUD_Speed", "STR_Mavic_HUD_Speed_KMH", "STR_Mavic_HUD_Speed_MPH", "STR_Mavic_HUD_Speed_KPH", "STR_Mavic_HUD_Speed_FPS"], 0],
 	0,
-	{ publicVariable "mavic_setting_hudHSpeedUnit" }
+	{}
 ] call CBA_fnc_addSetting;
 
 [
@@ -57,7 +57,7 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	false,
 	0,
-	{ publicVariable "mavic_setting_hudHeading" }
+	{}
 ] call CBA_fnc_addSetting;
 
 
@@ -68,7 +68,7 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	[[0, 1], ["STR_Mavic_HUD_Meters", "STR_Mavic_HUD_Feet"], 0],
 	0,
-	{ publicVariable "mavic_setting_hudHeightUnit" }
+	{}
 ] call CBA_fnc_addSetting;
 
 [
@@ -78,7 +78,17 @@
 	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
 	[[0, 1, 2, 3], ["STR_Mavic_HUD_Meters", "STR_Mavic_HUD_Feet", "STR_Mavic_HUD_Yard", "STR_Mavic_HUD_Mile"], 0],
 	0,
-	{ publicVariable "mavic_setting_hudDistanceUnit" }
+	{}
+] call CBA_fnc_addSetting;
+
+[
+	"mavic_setting_lightUIdisable",
+	"CHECKBOX",
+	["STR_mavic_setting_lightUIdisable_displayName","STR_mavic_setting_lightUIdisable_description"],
+	["STR_mavic_setting_MOD", "STR_mavic_setting_Category_Interface"],
+	false,
+	0,
+	{}
 ] call CBA_fnc_addSetting;
 
 [
@@ -124,6 +134,10 @@
 	{ publicVariable "mavic_setting_lightAllowed" },
 	true
 ] call CBA_fnc_addSetting;
+
+/*################*/
+/*### KEYBINDS ###*/
+/*################*/
 
 [
 	"STR_mavic_setting_MOD",

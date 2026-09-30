@@ -16,6 +16,10 @@ if (isClass(configFile >> "CfgPatches" >> "ace_main")) then {
 }] call CBA_fnc_addPlayerEventHandler;
 
 [missionNamespace, "mavic_EH_showMessage", {
+	if (mavic_setting_lightUIdisable) exitWith {
+		playSoundUI ["mavic_sound_beep"];
+	};
+	
 	private _group = uiNameSpace getVariable ["mavic_ctrl_DetachGrenade", controlNull];
 	if !(ctrlShown _group) exitWith {};
 	

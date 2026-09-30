@@ -185,6 +185,7 @@ class CfgVehicles
 			pilotOpticsShowCursor = 1;
 			controllable = 1;
 		};
+		
 		soundEngineOnInt[] = {"mavik\sounds\MavicOnNewIn.ogg",0.56,1};
 		soundEngineOnExt[] = {"mavik\sounds\MavicOnNew.ogg",0.56,1,200};
 		soundEngineOffInt[] = {"A3\Sounds_F\air\Uav_01\quad_stop_full_int",0,2};
@@ -230,6 +231,7 @@ class CfgVehicles
 				volume = "(1-camPos)*3*(rotorThrust-0.9)";
 			};
 		};
+		
 		class EventHandlers: EventHandlers
 		{
 			class Mavic_EventHandlers

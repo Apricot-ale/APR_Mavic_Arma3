@@ -23,16 +23,16 @@
                 <Japanese>インタフェースを表示</Japanese>
             </Key>
             <Key ID="STR_Mavic_Setting_showInterface_description">
-                <Original>Show/Hide Mavic HUD Interface.</Original>
-                <Japanese>MavicのHUDインタフェースを表示/非表示します。</Japanese>
+                <Original>Show/Hide Mavic HUD Interface.\nThis setting is overridden by "Use Vanilla Interface".</Original>
+                <Japanese>MavicのHUDインタフェースを表示/非表示します。\nこの設定は"ゲーム標準のインタフェースを使用"によって上書きされます。</Japanese>
             </Key>
             <Key ID="STR_Mavic_Setting_vanillaInterface_displayName">
                 <Original>Use Vanilla Interface</Original>
                 <Japanese>ゲーム標準のインタフェースを使用</Japanese>
             </Key>
             <Key ID="STR_Mavic_Setting_vanillaInterface_description">
-                <Original>Use vanilla UAV interface instead of the Mavic HUD.</Original>
-                <Japanese>Mavic用HUDの代わりにゲーム標準のUAVインタフェースを使用します。</Japanese>
+                <Original>Use vanilla UAV interface instead of the Mavic HUD.\nThis setting is overrides the "Show Interface" setting.</Original>
+                <Japanese>Mavic用HUDの代わりにゲーム標準のUAVインタフェースを使用します。\nこの設定は"インターフェースを表示"設定を上書きします。</Japanese>
             </Key>
             <Key ID="STR_Mavic_Setting_hudHeading_displayName">
                 <Original>Show Heading</Original>
@@ -97,6 +97,14 @@
             <Key ID="STR_Mavic_Setting_hudCrosshair_3">
                 <Original>Big (Original)</Original>
                 <Japanese>大きな十字 (オリジナル)</Japanese>
+            </Key>
+            <Key ID="STR_mavic_setting_lightUIdisable_displayName">
+                <Original>Disable light On Message</Original>
+                <Japanese>ライト点灯の表示を無効化</Japanese>
+            </Key>
+            <Key ID="STR_mavic_setting_lightUIdisable_description">
+                <Original>This will hide the "Bottom Auxiliary Light" message that appears when dropping a grenade.</Original>
+                <Japanese>グレネード投下時に表示される"底部補助ライト"メッセージを非表示にします。</Japanese>
             </Key>
             <Key ID="STR_Mavic_Setting_enableConnectionDistance_displayName">
                 <Original>Enable Distance Limit</Original>
