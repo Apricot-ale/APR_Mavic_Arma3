@@ -10,8 +10,13 @@
 params ["_mavic"];
 if (isNull _mavic) exitWith {};
 
-private _allowedGrenades = missionNamespace getVariable ["mavic_drop_setting_allowedGrenades", ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"]];
-_allowedGrenades = call compile _allowedGrenades;
+private _allowedGrenades = missionNamespace getVariable ["mavic_drop_setting_allowedGrenades", "['Mavic_M67', 'Mavic_V40', 'Mavic_F1', 'Mavic_VOG25', 'Mavic_TBG', 'Mavic_M433']"];
+if (_allowedGrenades isEqualType "") then {
+	_allowedGrenades = parseSimpleArray _allowedGrenades;
+};
+if !(_allowedGrenades isEqualType []) then {
+	_allowedGrenades = ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"];
+};
 _allowedGrenades = _allowedGrenades apply { toUpperANSI _x };
 
 private _maxGrenades = 2;
@@ -264,7 +269,9 @@ _btnDetachLast ctrlAddEventHandler ["ButtonClick", {
 	private _entry = _attached deleteAt ((count _attached) - 1);
 	if (_entry isEqualType [] && {count _entry >= 2}) then {
 		private _holder = _entry # 1;
-		if (!isNull _holder) then { deleteVehicle _holder; };
+		if (!isNull _holder) then {
+			[_holder] remoteExecCall ["deleteVehicle", _holder];
+		};
 	};
 
 	_mavic setVariable ["mavic_drop_var_grenadeList", _attached, true];
@@ -284,7 +291,9 @@ _btnDetachAll ctrlAddEventHandler ["ButtonClick", {
 	{
 		if (_x isEqualType [] && {count _x >= 2}) then {
 			private _holder = _x # 1;
-			if (!isNull _holder) then { deleteVehicle _holder; };
+			if (!isNull _holder) then {
+				[_holder] remoteExecCall ["deleteVehicle", _holder];
+			};
 		};
 	} forEach _attached;
 
@@ -345,14 +354,27 @@ _btnAttach ctrlAddEventHandler ["ButtonClick", {
 		systemChat format ["Mavic: %1", _message];
 	};
 
-	// Attach grenades
-	for "_i" from 1 to _quantity do {
-		[_mavic, _grenadeClass] call mavic_drop_fnc_initDrone;
-	};
+	// Attach grenades (server-authoritative); refresh UI after sync
+	[_mavic, _grenadeClass, _quantity, _display] spawn {
+		params ["_mavic", "_grenadeClass", "_quantity", "_display"];
+		if (isNull _display) exitWith {};
 
-	// Update status display
-	private _fnUpdate = _display getVariable ["mavic_drop_fnUpdate", {}];
-	[_display] call _fnUpdate;
+		private _before = count (_mavic getVariable ["mavic_drop_var_grenadeList", []]);
+		for "_i" from 1 to _quantity do {
+			[_mavic, _grenadeClass] call mavic_drop_fnc_initDrone;
+		};
+
+		private _t = diag_tickTime + 2;
+		waitUntil {
+			(count (_mavic getVariable ["mavic_drop_var_grenadeList", []]) >= (_before + _quantity))
+			|| {diag_tickTime > _t}
+			|| {isNull _display}
+		};
+
+		if (isNull _display) exitWith {};
+		private _fnUpdate = _display getVariable ["mavic_drop_fnUpdate", {}];
+		[_display] call _fnUpdate;
+	};
 }];
 
 // OK (closes dialog)

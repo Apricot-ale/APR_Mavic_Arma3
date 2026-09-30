@@ -18,6 +18,7 @@ class CfgFunctions
 			class addUavToInventory {};
 			class changeBattery {};
 			class checkUAVGrenadeDrop {};
+			class getControlledMavic {};
 			class canDisassembly {};
 		};
 	};

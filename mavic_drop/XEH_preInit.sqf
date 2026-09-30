@@ -30,3 +30,12 @@
 	1,
 	{ publicVariable "Mavic_Drop_Setting_allowedGrenades" }
 ] call CBA_fnc_addSetting;
+
+// Server events (bypass mission CfgRemoteExec whitelists that block remoteExec of custom fncs)
+["mavic_drop_server_initDrone", {
+	_this call mavic_drop_fnc_initDrone;
+}] call CBA_fnc_addEventHandler;
+
+["mavic_drop_server_dropGrenade", {
+	_this call mavic_drop_fnc_dropGrenade;
+}] call CBA_fnc_addEventHandler;

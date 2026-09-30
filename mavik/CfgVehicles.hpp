@@ -45,9 +45,28 @@ class CfgVehicles
 		fuelConsumptionRate = 0.00028;
 		mainBladeRadius = 0.35;
 		tailBladeRadius = 0.35;
+		// Kill inherited Helicopter_Base backpack/inventory cargo (avoids MP:
+		// "Tried to create local-only container with backpacks")
 		maximumLoad = 0;
+		transportMaxBackpacks = 0;
+		transportMaxWeapons = 0;
+		transportMaxMagazines = 0;
 		camouflage = 0.2;
 		class TransportItems {};
+		class TransportWeapons {};
+		class TransportMagazines {};
+		class TransportBackpacks {};
+		// Satisfy engine ViV/cargo checks for all variants + wreck
+		cargoBayDimensions[] = {{-0.25, -0.25, -0.15}, {0.25, 0.25, 0.15}};
+		class Exits
+		{
+			class Exit1
+			{
+				position = "pos_driver";
+				direction = "pos_driver_dir";
+				selection = "pos_driver";
+			};
+		};
 		hiddenSelections[] = {"camo"};
 		hiddenSelectionsTextures[] = {"mavik\textures\body_co.paa"};
 		//destrType = "DestructWreck";
@@ -367,30 +386,10 @@ class CfgVehicles
 	class Mavic3_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3_displayName";
-		class Exits
-		{
-			class Exit1
-			{
-				position = "pos_driver";
-				direction = "pos_driver_dir";
-				selection = "pos_driver";
-			};
-		};
-		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 	};
 	class Mavic3T_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3T_displayName";
-		class Exits
-		{
-			class Exit1
-			{
-				position = "pos_driver";
-				direction = "pos_driver_dir";
-				selection = "pos_driver";
-			};
-		};
-		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","Ti"};
@@ -421,16 +420,6 @@ class CfgVehicles
 	class Mavic3N_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3N_displayName";
-		class Exits
-		{
-			class Exit1
-			{
-				position = "pos_driver";
-				direction = "pos_driver_dir";
-				selection = "pos_driver";
-			};
-		};
-		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","NVG"};
@@ -451,16 +440,6 @@ class CfgVehicles
 	class Mavic3X_drone_base_F: Mavic_drone_base_F
 	{
 		displayName = "$STR_Mavic_Vehicle_Mavic3X_displayName";
-		class Exits
-		{
-			class Exit1
-			{
-				position = "pos_driver";
-				direction = "pos_driver_dir";
-				selection = "pos_driver";
-			};
-		};
-		cargoBayDimensions[] = {{-0.5, -0.5, -0.5}, {0.5, 0.5, 0.5}};
 		class ViewOptics: ViewOptics
 		{
 			visionMode[] = {"Normal","NVG","Ti"};

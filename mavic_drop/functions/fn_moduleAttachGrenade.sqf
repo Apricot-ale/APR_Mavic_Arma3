@@ -1,71 +1,60 @@
 /*
  * fn_moduleAttachGrenade.sqf
- * Zeus module function to attach grenades to Mavic drones
- * Place this module on a Mavic drone to attach a grenade
+ * Zeus module: resolve target on the server, then open UI only on the
+ * placing Zeus client (the one whose curator mouseOver matches the drone).
  *
- * Author: tfl_icy
- * 
- * Arguments:
- * 0: Module <OBJECT>
- * 1: Synchronized units <ARRAY>
- * 2: Activated <BOOL>
- *
- * Return Value:
- * None
- *
- * Public: No
+ * Dedicated-server safe: isGlobal=0 runs here on the server; UI is remoteExec'd.
  */
 
 params ["_module"];
 
-if (!(local _module)) exitWith {};
+if (!isServer) exitWith {};
 
-// Resolve target drone in priority order:
-// 1. Zeus mouse-over object (if valid)
-// 2. attachedTo _module
-// 3. first object in synchronizedObjects _module
+[_module] spawn {
+	params ["_module"];
 
-private _mavic = objNull;
-
-// Priority 1: Check mouse-over
-private _mouseOver = missionNamespace getVariable ["bis_fnc_curatorObjectPlaced_mouseOver", []];
-if (count _mouseOver >= 2) then {
-	_mouseOver params ["_mouseOverType", "_mouseOverUnit"];
-	if (_mouseOverType == "OBJECT" && !isNull _mouseOverUnit && {_mouseOverUnit isKindOf "Mavic_drone_base_F"}) then {
-		_mavic = _mouseOverUnit;
-	};
-};
-
-// Priority 2: Check attachedTo
-if (isNull _mavic) then {
+	// curatorCanAttach may take a moment to sync on dedicated
 	private _attached = attachedTo _module;
+	if (isNull _attached) then {
+		private _t = diag_tickTime + 1.5;
+		waitUntil {
+			_attached = attachedTo _module;
+			!isNull _attached || {diag_tickTime > _t}
+		};
+	};
+
+	private _mavic = objNull;
 	if (!isNull _attached && {_attached isKindOf "Mavic_drone_base_F"}) then {
 		_mavic = _attached;
 	};
-};
 
-// Priority 3: Check synchronized objects
-if (isNull _mavic) then {
-	private _synced = synchronizedObjects _module;
-	{
-		if (!isNull _x && {_x isKindOf "Mavic_drone_base_F"}) exitWith {
-			_mavic = _x;
+	if (isNull _mavic) then {
+		{
+			if (!isNull _x && {_x isKindOf "Mavic_drone_base_F"}) exitWith {
+				_mavic = _x;
+			};
+		} forEach (synchronizedObjects _module);
+	};
+
+	if (isNull _mavic || {!alive _mavic}) exitWith {
+		{
+			private _unit = getAssignedCuratorUnit _x;
+			if (!isNull _unit) then {
+				["ERROR!", "No Mavic drone found. Place this module on a Mavic drone."] remoteExecCall ["BIS_fnc_curatorHint", _unit];
+			};
+		} forEach allCurators;
+		deleteVehicle _module;
+	};
+
+	// Open UI on clients: only the placer (matching mouseOver) will proceed
+	[_mavic, _module] remoteExecCall ["mavic_drop_fnc_moduleAttachGrenadeClient", 0];
+
+	// Fallback cleanup if no client claims the module
+	[_module] spawn {
+		params ["_module"];
+		sleep 5;
+		if (!isNull _module) then {
+			deleteVehicle _module;
 		};
-	} forEach _synced;
+	};
 };
-
-// Validate target
-private _isMavic = (!isNull _mavic) && {alive _mavic} && {_mavic isKindOf "Mavic_drone_base_F"};
-
-if (!_isMavic) exitWith {
-	["ERROR!", "No Mavic drone found. Place this module on a Mavic drone."] call BIS_fnc_curatorHint;
-	deleteVehicle _module;
-};
-
-// Open the UI selector for grenade selection
-// This shows the same UI as the manual attachment, but without requiring player inventory
-[_mavic] call mavic_drop_fnc_uiGrenadeSelectorZeus;
-
-// Delete the module
-deleteVehicle _module;
-

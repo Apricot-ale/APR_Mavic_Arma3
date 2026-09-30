@@ -18,7 +18,6 @@
 params ["_target"];
 
 private _iterationGreandes = _target getVariable ["mavic_drop_var_grenadeList", []];
-private _attachedGrenades = attachedObjects _target;
 
 private _display = findDisplay 46 createDisplay "RscDisplayEmpty";
 _display displayAddEventHandler ["Unload", { ["UNLOAD"] call mavic_drop_fnc_dynamicBlurToggle; }];
@@ -38,7 +37,7 @@ private _sizeH = GRID_H(3);
 private _count = count _iterationGreandes;
 for "_i" from 0 to _count - 1 do {
     private _angle = deg(_i * (2 * pi / _count));
-    private _grenade = (_iterationGreandes select _i) select 0;
+    (_iterationGreandes select _i) params ["_grenade", ["_holder", objNull]];
 
     private _x = 0.5 + (_radius * cos(_angle)) - (_sizeW / 2);
     private _y = 0.5 + (_radius * sin(_angle)) - (_sizeH / 2);
@@ -47,7 +46,7 @@ for "_i" from 0 to _count - 1 do {
     _pictureButton ctrlSetText (getText(configFile >> "CfgMagazines" >> _grenade >> "picture"));
     _pictureButton ctrlSetBackgroundColor [0, 0, 0, 0];
     _pictureButton ctrlSetPosition [_x, _y, _sizeW, _sizeH];
-    _pictureButton setVariable ["mavic_drop_var_grenadeUIdata", [_target, _attachedGrenades select _i, _grenade, _display]];
+    _pictureButton setVariable ["mavic_drop_var_grenadeUIdata", [_target, _holder, _grenade, _display]];
     _pictureButton ctrlAddEventHandler ["ButtonClick", {
         params ["_control"];
 
@@ -61,8 +60,10 @@ for "_i" from 0 to _count - 1 do {
         private _mavic_drop_var_grenadeList = _target getVariable ["mavic_drop_var_grenadeList", []];
 
         _mavic_drop_var_grenadeList deleteAt (_mavic_drop_var_grenadeList findIf {_grenadeMagazine in _x});
-        
-        deleteVehicle _holder;
+
+        if (!isNull _holder) then {
+            [_holder] remoteExecCall ["deleteVehicle", _holder];
+        };
 
         _target setVariable ["mavic_drop_var_grenadeList", _mavic_drop_var_grenadeList, true];
 

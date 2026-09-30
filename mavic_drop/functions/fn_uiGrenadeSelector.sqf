@@ -21,8 +21,13 @@ params ["_actionInfo"];
 private _player = missionNamespace getVariable ["bis_fnc_moduleRemoteControl_unit", player];
 private _allItems = [_player, true, true, true, true, true, true] call CBA_fnc_uniqueUnitItems;
 _allItems = _allItems apply { toUpperANSI _x };
-private _allowedGrenades = missionNamespace getVariable ["mavic_drop_setting_allowedGrenades", ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"]];
-_allowedGrenades = call compile _allowedGrenades;
+private _allowedGrenades = missionNamespace getVariable ["mavic_drop_setting_allowedGrenades", "['Mavic_M67', 'Mavic_V40', 'Mavic_F1', 'Mavic_VOG25', 'Mavic_TBG', 'Mavic_M433']"];
+if (_allowedGrenades isEqualType "") then {
+	_allowedGrenades = parseSimpleArray _allowedGrenades;
+};
+if !(_allowedGrenades isEqualType []) then {
+	_allowedGrenades = ["Mavic_M67", "Mavic_V40", "Mavic_F1", "Mavic_VOG25", "Mavic_TBG", "Mavic_M433"];
+};
 _allowedGrenades = _allowedGrenades apply { toUpperANSI _x };
 _allItems = _allItems select { _x in _allowedGrenades };
 

@@ -43,7 +43,7 @@ if (_attachedGrenades isNotEqualTo []) then {
 			_WeaponHolder addMagazineCargoGlobal [_Grenade, 1];
 		};
 	} forEach _attachedGrenades;
-	{deleteVehicle _x;} forEach attachedObjects _uav;
+	{[_x] remoteExecCall ["deleteVehicle", _x];} forEach attachedObjects _uav;
 };
 
 _uav setVariable ["mavic_drop_var_grenadeList", [], true];

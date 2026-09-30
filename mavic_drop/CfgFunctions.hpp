@@ -13,6 +13,7 @@ class CfgFunctions
 			class uiGrenadeSelectorZeus{};
 			class detach_uiGrenadeSelector{};
 			class moduleAttachGrenade{};
+			class moduleAttachGrenadeClient{};
 		};
 	};
 };
